@@ -9,6 +9,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import static javaapplication1.SeeFilter.jTextArea1;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,10 +19,11 @@ import javax.swing.JOptionPane;
 public class SeeFilter extends javax.swing.JFrame {
 
     /**
-     * Creates new form SeeFilter
+     * Creates new form See
      */
     public SeeFilter() {
         initComponents();
+        this.pack();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setTitle("See Filter");
@@ -38,73 +40,84 @@ public class SeeFilter extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Body = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        exit = new javax.swing.JButton();
-        Back = new javax.swing.JButton();
-        addOther = new javax.swing.JButton();
-        export = new javax.swing.JButton();
-        jLabelWallaper = new javax.swing.JLabel();
+        Footer = new javax.swing.JPanel();
+        IpBack = new javax.swing.JButton();
+        ipAddAnotherFilter = new javax.swing.JButton();
+        ipExportFile = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 480, 360));
+        Body.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 600, 330));
 
-        exit.setBackground(new java.awt.Color(255, 0, 0));
-        exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        exit.setForeground(new java.awt.Color(255, 255, 255));
-        exit.setText("x");
-        exit.addActionListener(new java.awt.event.ActionListener() {
+        getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 862, 365));
+
+        IpBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
+        IpBack.setText("Back");
+        IpBack.setAlignmentY(0.0F);
+        IpBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
+                IpBackActionPerformed(evt);
             }
         });
-        getContentPane().add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, -1, -1));
 
-        Back.setBackground(new java.awt.Color(255, 102, 0));
-        Back.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Back.setText("Back");
-        Back.addActionListener(new java.awt.event.ActionListener() {
+        ipAddAnotherFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add.png"))); // NOI18N
+        ipAddAnotherFilter.setText("Add Another Filter");
+        ipAddAnotherFilter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackActionPerformed(evt);
+                ipAddAnotherFilterActionPerformed(evt);
             }
         });
-        getContentPane().add(Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, -1, -1));
 
-        addOther.setBackground(new java.awt.Color(0, 255, 51));
-        addOther.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        addOther.setText("Add Another Filter");
-        addOther.addActionListener(new java.awt.event.ActionListener() {
+        ipExportFile.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/export.png"))); // NOI18N
+        ipExportFile.setText("Export File");
+        ipExportFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addOtherActionPerformed(evt);
+                ipExportFileActionPerformed(evt);
             }
         });
-        getContentPane().add(addOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 430, -1, -1));
 
-        export.setBackground(new java.awt.Color(255, 102, 153));
-        export.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        export.setText("Export File");
-        export.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exportActionPerformed(evt);
-            }
-        });
-        getContentPane().add(export, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 430, -1, -1));
+        javax.swing.GroupLayout FooterLayout = new javax.swing.GroupLayout(Footer);
+        Footer.setLayout(FooterLayout);
+        FooterLayout.setHorizontalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addContainerGap(504, Short.MAX_VALUE)
+                .addComponent(ipExportFile)
+                .addGap(18, 18, 18)
+                .addComponent(ipAddAnotherFilter)
+                .addGap(18, 18, 18)
+                .addComponent(IpBack, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        FooterLayout.setVerticalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addGap(8, 8, 8)
+                .addGroup(FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(IpBack)
+                    .addComponent(ipAddAnotherFilter)
+                    .addComponent(ipExportFile))
+                .addGap(8, 8, 8))
+        );
 
-        jLabelWallaper.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/índice_1.jpg"))); // NOI18N
-        getContentPane().add(jLabelWallaper, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 460));
+        getContentPane().add(Footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 445, 860, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
     String ret = "";
     /*Allows the return to the previous menu.*/
-    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+    private void IpBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IpBackActionPerformed
         // TODO add your handling code here:
         if(ret == "IP"){
             CreateIpFilter obj = new CreateIpFilter();
@@ -128,17 +141,21 @@ public class SeeFilter extends javax.swing.JFrame {
             obj.setVisible(true);
         }
         dispose();
-    }//GEN-LAST:event_BackActionPerformed
+    }//GEN-LAST:event_IpBackActionPerformed
 
-    /*End the application.*/
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+    /*It allows adding a new filter to those already created. Send the user to the filter selection menu.*/
+    private void ipAddAnotherFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipAddAnotherFilterActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_exitActionPerformed
+        SelectTypeFilter obj = new SelectTypeFilter();
+        obj.text = jTextArea1.getText();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ipAddAnotherFilterActionPerformed
 
     /*It allows to export the filters created on a file to which the name must be inserted. 
     If the file already exists, you can overwrite or add the new filters to existing ones.*/
-    private void exportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportActionPerformed
+    private void ipExportFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipExportFileActionPerformed
+        // TODO add your handling code here:
         try {
             String [] cmd = {"mkdir","-p","/tmp/created"};
             Runtime.getRuntime().exec(cmd);
@@ -185,15 +202,7 @@ public class SeeFilter extends javax.swing.JFrame {
             obj.setVisible(true);
             dispose();
         }
-    }//GEN-LAST:event_exportActionPerformed
-
-    /*It allows adding a new filter to those already created. Send the user to the filter selection menu.*/
-    private void addOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addOtherActionPerformed
-        SelectTypeFilter obj = new SelectTypeFilter();
-        obj.text = jTextArea1.getText();
-        obj.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_addOtherActionPerformed
+    }//GEN-LAST:event_ipExportFileActionPerformed
 
     /**
      * @param args the command line arguments
@@ -221,6 +230,7 @@ public class SeeFilter extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(SeeFilter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -231,11 +241,11 @@ public class SeeFilter extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Back;
-    private javax.swing.JButton addOther;
-    private javax.swing.JButton exit;
-    private javax.swing.JButton export;
-    private javax.swing.JLabel jLabelWallaper;
+    private javax.swing.JPanel Body;
+    private javax.swing.JPanel Footer;
+    private javax.swing.JButton IpBack;
+    private javax.swing.JButton ipAddAnotherFilter;
+    private javax.swing.JButton ipExportFile;
     public static javax.swing.JScrollPane jScrollPane1;
     public static javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables

@@ -5,6 +5,9 @@
  */
 package javaapplication1;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 /**
  *
  * @author bruno
@@ -13,9 +16,13 @@ public class main {
     
     public static void main(String[] args){
         /*Make the call to MenuFrame, which opens the main menu.*/
-        MenuFrame v = new MenuFrame();
-        v.main(args);
+        //MenuFrame v = new MenuFrame();
+        MenuFrame.main(args);
         
+        /*CreateIpFilter f = new CreateIpFilter();
+        f.pack();
+        f.setLocationRelativeTo(null);
+        f.setVisible(true);*/
     }
     
 }

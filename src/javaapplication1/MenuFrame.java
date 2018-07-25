@@ -7,10 +7,9 @@ package javaapplication1;
 
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.io.File;
 import java.io.IOException;
-import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author bruno
@@ -18,21 +17,22 @@ import javax.swing.JOptionPane;
 public class MenuFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewJFrame
+     * Creates new form Menu
      */
     public MenuFrame() {
         initComponents();
+        this.pack();
         this.setLocationRelativeTo(null);
+        this.setTitle("Main Menu");
         this.setResizable(false);
-        this.setTitle("nDpi Control Filter");
         this.setIconImage(getIconImage());
     }
-    
+
     public Image getIconImage(){
         Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("images/icono.png"));
         return retValue;
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,97 +42,168 @@ public class MenuFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        exit = new javax.swing.JButton();
-        info = new javax.swing.JButton();
-        createFilter = new javax.swing.JButton();
-        nameApp = new javax.swing.JLabel();
-        runWireshark = new javax.swing.JButton();
-        jLabelIcon = new javax.swing.JLabel();
-        jLabelFondo = new javax.swing.JLabel();
+        Header = new javax.swing.JPanel();
+        singIcon = new javax.swing.JLabel();
+        universityIcon = new javax.swing.JLabel();
+        Body = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        icon = new javax.swing.JLabel();
+        appName = new javax.swing.JLabel();
+        Footer = new javax.swing.JPanel();
+        ipFilter = new javax.swing.JButton();
+        ipWireshark = new javax.swing.JButton();
+        ipInfo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setIconImages(getIconImages());
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setBackground(new java.awt.Color(255, 0, 0));
-        exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        exit.setForeground(new java.awt.Color(255, 255, 255));
-        exit.setText("x");
-        exit.addActionListener(new java.awt.event.ActionListener() {
+        Header.setAlignmentX(0.0F);
+        Header.setAlignmentY(0.0F);
+        Header.setMinimumSize(new java.awt.Dimension(860, 38));
+        Header.setPreferredSize(new java.awt.Dimension(860, 38));
+
+        singIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSING.png"))); // NOI18N
+
+        universityIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/universidade-vigo.png"))); // NOI18N
+
+        javax.swing.GroupLayout HeaderLayout = new javax.swing.GroupLayout(Header);
+        Header.setLayout(HeaderLayout);
+        HeaderLayout.setHorizontalGroup(
+            HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HeaderLayout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addComponent(singIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
+                .addComponent(universityIcon)
+                .addGap(54, 54, 54))
+        );
+        HeaderLayout.setVerticalGroup(
+            HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(singIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HeaderLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(universityIcon)
+                .addContainerGap())
+        );
+
+        getContentPane().add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 862, 80));
+        Header.getAccessibleContext().setAccessibleName("");
+
+        Body.setAlignmentX(0.0F);
+        Body.setAlignmentY(0.0F);
+        Body.setMinimumSize(new java.awt.Dimension(860, 362));
+
+        icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/shark_1.png"))); // NOI18N
+
+        appName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        appName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        appName.setText("FilterAnalycer");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 48, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(appName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(icon, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(icon, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(appName, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout BodyLayout = new javax.swing.GroupLayout(Body);
+        Body.setLayout(BodyLayout);
+        BodyLayout.setHorizontalGroup(
+            BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BodyLayout.createSequentialGroup()
+                .addGap(302, 302, 302)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(302, Short.MAX_VALUE))
+        );
+        BodyLayout.setVerticalGroup(
+            BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BodyLayout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(56, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 862, 365));
+
+        Footer.setMinimumSize(new java.awt.Dimension(0, 0));
+        Footer.setPreferredSize(new java.awt.Dimension(852, 39));
+
+        ipFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/embudo.png"))); // NOI18N
+        ipFilter.setText("Create Filter");
+        ipFilter.setMaximumSize(new java.awt.Dimension(109, 23));
+        ipFilter.setMinimumSize(new java.awt.Dimension(109, 23));
+        ipFilter.setPreferredSize(new java.awt.Dimension(109, 23));
+        ipFilter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
+                ipFilterActionPerformed(evt);
             }
         });
-        getContentPane().add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, -1, 30));
 
-        info.setBackground(new java.awt.Color(0, 51, 204));
-        info.setFont(new java.awt.Font("Lucida Handwriting", 1, 10)); // NOI18N
-        info.setForeground(new java.awt.Color(255, 255, 255));
-        info.setText("i");
-        info.addActionListener(new java.awt.event.ActionListener() {
+        ipWireshark.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/shark.png"))); // NOI18N
+        ipWireshark.setText("Open Wireshark");
+        ipWireshark.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                infoActionPerformed(evt);
+                ipWiresharkActionPerformed(evt);
             }
         });
-        getContentPane().add(info, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 40, 30));
 
-        createFilter.setBackground(new java.awt.Color(255, 204, 51));
-        createFilter.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        createFilter.setForeground(new java.awt.Color(255, 255, 255));
-        createFilter.setText("Create Filter");
-        createFilter.addActionListener(new java.awt.event.ActionListener() {
+        ipInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/informacion.png"))); // NOI18N
+        ipInfo.setText("Information");
+        ipInfo.setMaximumSize(new java.awt.Dimension(123, 23));
+        ipInfo.setMinimumSize(new java.awt.Dimension(123, 23));
+        ipInfo.setPreferredSize(new java.awt.Dimension(123, 23));
+        ipInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createFilterActionPerformed(evt);
+                ipInfoActionPerformed(evt);
             }
         });
-        getContentPane().add(createFilter, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 150, -1));
 
-        nameApp.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        nameApp.setForeground(new java.awt.Color(255, 255, 255));
-        nameApp.setText("FilterAnalyzer");
-        getContentPane().add(nameApp, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, -1, -1));
+        javax.swing.GroupLayout FooterLayout = new javax.swing.GroupLayout(Footer);
+        Footer.setLayout(FooterLayout);
+        FooterLayout.setHorizontalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addContainerGap(230, Short.MAX_VALUE)
+                .addComponent(ipInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ipWireshark, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ipFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+        );
+        FooterLayout.setVerticalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FooterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ipInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ipFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ipWireshark, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
 
-        runWireshark.setBackground(new java.awt.Color(0, 255, 51));
-        runWireshark.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        runWireshark.setForeground(new java.awt.Color(255, 255, 255));
-        runWireshark.setText("Open Wireshark");
-        runWireshark.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                runWiresharkActionPerformed(evt);
-            }
-        });
-        getContentPane().add(runWireshark, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 150, -1));
-
-        jLabelIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/shark_1.png"))); // NOI18N
-        getContentPane().add(jLabelIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, -20, 220, 230));
-
-        jLabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/índice_1.jpg"))); // NOI18N
-        getContentPane().add(jLabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 300));
+        getContentPane().add(Footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 445, 860, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    /*End the application.*/
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_exitActionPerformed
-
-    /*Report on the different sections available in the main menu.*/
-    private void infoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoActionPerformed
-        JOptionPane.showMessageDialog(this, "To start select one of the options (Press x to exit):\n" +
-"\tOpen Wireshark: Allows you to start Wireshark with the menu in order to load the created filter files, see the results and reset them.\n" +
-"\tCreate Filter: Allows the creation of a filter file (udp, tcp, ip or nDpi) according to the allowed parameters.\n", "Info", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_infoActionPerformed
-
-    /*Make the call to SelectTypeFilter, which allows you to select the type of filter to create.*/
-    private void createFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createFilterActionPerformed
-        SelectTypeFilter obj = new SelectTypeFilter();
-        obj.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_createFilterActionPerformed
 
     /*Initialize Wireshark together with the FilterAnalyzer.lua plugin.*/
-    private void runWiresharkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_runWiresharkActionPerformed
+    private void ipWiresharkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipWiresharkActionPerformed
+        // TODO add your handling code here:
         try {
             String r = java.lang.System.getProperty("user.dir");
             String [] cmd = {"wireshark","-X","lua_script:" + r + "/FilterAnalyzer.lua"};
@@ -142,8 +213,23 @@ public class MenuFrame extends javax.swing.JFrame {
         }finally{
             
         }
+    }//GEN-LAST:event_ipWiresharkActionPerformed
 
-    }//GEN-LAST:event_runWiresharkActionPerformed
+    /*Make the call to SelectTypeFilter, which allows you to select the type of filter to create.*/
+    private void ipFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipFilterActionPerformed
+        // TODO add your handling code here:
+        SelectTypeFilter obj = new SelectTypeFilter();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ipFilterActionPerformed
+
+    /*Report on the different sections available in the main menu.*/
+    private void ipInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipInfoActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "To start select one of the options (Press x to exit):\n" +
+"\tOpen Wireshark: Allows you to start Wireshark with the menu in order to load the created filter files, see the results and reset them.\n" +
+"\tCreate Filter: Allows the creation of a filter file (udp, tcp, ip or nDpi) according to the allowed parameters.\n", "Information", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_ipInfoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,12 +268,16 @@ public class MenuFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton createFilter;
-    private javax.swing.JButton exit;
-    private javax.swing.JButton info;
-    private javax.swing.JLabel jLabelFondo;
-    private javax.swing.JLabel jLabelIcon;
-    private javax.swing.JLabel nameApp;
-    private javax.swing.JButton runWireshark;
+    private javax.swing.JPanel Body;
+    private javax.swing.JPanel Footer;
+    private javax.swing.JPanel Header;
+    private javax.swing.JLabel appName;
+    private javax.swing.JLabel icon;
+    private javax.swing.JButton ipFilter;
+    private javax.swing.JButton ipInfo;
+    private javax.swing.JButton ipWireshark;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel singIcon;
+    private javax.swing.JLabel universityIcon;
     // End of variables declaration//GEN-END:variables
 }

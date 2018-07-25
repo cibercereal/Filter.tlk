@@ -5,8 +5,6 @@
  */
 package javaapplication1;
 
-import com.sun.awt.AWTUtilities;
-
 /**
  *
  * @author bruno
@@ -14,10 +12,11 @@ import com.sun.awt.AWTUtilities;
 public class CreateUdpFilter extends javax.swing.JFrame {
 
     /**
-     * Creates new form CreateUdpFilter
+     * Creates new form CreateUdp
      */
     public CreateUdpFilter() {
         initComponents();
+        this.pack();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setTitle("Select Type");
@@ -33,188 +32,696 @@ public class CreateUdpFilter extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
-        Do = new javax.swing.JButton();
-        exit = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        Back = new javax.swing.JButton();
-        jButtonChecksum = new javax.swing.JButton();
-        jButtonLength = new javax.swing.JButton();
-        jButtonSourcePort = new javax.swing.JButton();
-        jButtonDestinationPort = new javax.swing.JButton();
-        jToggleButtonLength = new javax.swing.JToggleButton();
-        jLabel2 = new javax.swing.JLabel();
-        wallaper2 = new javax.swing.JLabel();
+        Header = new javax.swing.JPanel();
+        filterName = new javax.swing.JLabel();
+        Body = new javax.swing.JPanel();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField20 = new javax.swing.JTextField();
+        jTextField19 = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        ipDestinationPort = new javax.swing.JButton();
+        ipSourcePort = new javax.swing.JButton();
+        ipLength = new javax.swing.JButton();
+        ipCheckSum = new javax.swing.JButton();
+        Footer = new javax.swing.JPanel();
+        IpBack = new javax.swing.JButton();
+        ipSeeFilter = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Do.setBackground(new java.awt.Color(0, 255, 51));
-        Do.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Do.setText("See Filter");
-        Do.addActionListener(new java.awt.event.ActionListener() {
+        Header.setAlignmentX(0.0F);
+        Header.setAlignmentY(0.0F);
+        Header.setMinimumSize(new java.awt.Dimension(860, 38));
+        Header.setPreferredSize(new java.awt.Dimension(860, 38));
+        Header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        filterName.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
+        filterName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        filterName.setText("UDP Header");
+        filterName.setMaximumSize(new java.awt.Dimension(140, 20));
+        filterName.setMinimumSize(new java.awt.Dimension(140, 20));
+        filterName.setName(""); // NOI18N
+        filterName.setPreferredSize(new java.awt.Dimension(140, 20));
+        Header.add(filterName, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 862, 33));
+
+        getContentPane().add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 862, 40));
+
+        Body.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        Body.setMinimumSize(new java.awt.Dimension(860, 362));
+        Body.setPreferredSize(new java.awt.Dimension(860, 362));
+        Body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField6.setEditable(false);
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField6.setText("3");
+        jTextField6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DoActionPerformed(evt);
+                jTextField6ActionPerformed(evt);
             }
         });
-        getContentPane().add(Do, new org.netbeans.lib.awtextra.AbsoluteConstraints(855, 410, 120, -1));
+        Body.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(697, 2, 163, 36));
 
-        exit.setBackground(new java.awt.Color(255, 0, 0));
-        exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        exit.setForeground(new java.awt.Color(255, 255, 255));
-        exit.setText("X");
-        exit.addActionListener(new java.awt.event.ActionListener() {
+        jTextField5.setEditable(false);
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setText("2");
+        jTextField5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
+                jTextField5ActionPerformed(evt);
             }
         });
-        getContentPane().add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 0, -1, -1));
+        Body.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 2, 163, 36));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("UDP HEADER");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 120, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/índice.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 100, 20));
-
-        Back.setBackground(new java.awt.Color(255, 102, 0));
-        Back.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Back.setText("Back");
-        Back.addActionListener(new java.awt.event.ActionListener() {
+        jTextField4.setEditable(false);
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setText("1");
+        jTextField4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackActionPerformed(evt);
+                jTextField4ActionPerformed(evt);
             }
         });
-        getContentPane().add(Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 410, -1, -1));
+        Body.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 2, 163, 36));
 
-        jButtonChecksum.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButtonChecksum.setText("Checksum");
-        jButtonChecksum.addActionListener(new java.awt.event.ActionListener() {
+        jTextField3.setEditable(false);
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setText("0");
+        jTextField3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonChecksumActionPerformed(evt);
+                jTextField3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonChecksum, new org.netbeans.lib.awtextra.AbsoluteConstraints(571, 230, 460, 40));
+        Body.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 2, 163, 36));
 
-        jButtonLength.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButtonLength.setText("Length");
-        jButtonLength.addActionListener(new java.awt.event.ActionListener() {
+        jTextField2.setEditable(false);
+        jTextField2.setFont(new java.awt.Font("Ubuntu", 3, 15)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(58, 99, 243));
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setText("Octet");
+        jTextField2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonLengthActionPerformed(evt);
+                jTextField2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonLength, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 460, 40));
+        Body.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 2, 103, 36));
 
-        jButtonSourcePort.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButtonSourcePort.setText("Source Port");
-        jButtonSourcePort.addActionListener(new java.awt.event.ActionListener() {
+        jTextField1.setEditable(false);
+        jTextField1.setFont(new java.awt.Font("Ubuntu", 3, 15)); // NOI18N
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField1.setText("Offsets");
+        jTextField1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSourcePortActionPerformed(evt);
+                jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonSourcePort, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 203, 460, 40));
+        Body.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 2, 103, 36));
 
-        jButtonDestinationPort.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButtonDestinationPort.setText("Destination Port");
-        jButtonDestinationPort.addActionListener(new java.awt.event.ActionListener() {
+        jTextField20.setEditable(false);
+        jTextField20.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        jTextField20.setForeground(new java.awt.Color(58, 99, 243));
+        jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField20.setText("Octet");
+        jTextField20.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonDestinationPortActionPerformed(evt);
+                jTextField20ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonDestinationPort, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 460, 40));
+        Body.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 39, 103, 36));
 
-        jToggleButtonLength.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButtonLength.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jToggleButtonLength.setText("Length");
-        jToggleButtonLength.addActionListener(new java.awt.event.ActionListener() {
+        jTextField19.setEditable(false);
+        jTextField19.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        jTextField19.setForeground(new java.awt.Color(58, 99, 243));
+        jTextField19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField19.setText("Bit");
+        jTextField19.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField19.setPreferredSize(new java.awt.Dimension(54, 22));
+        jTextField19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButtonLengthActionPerformed(evt);
+                jTextField19ActionPerformed(evt);
             }
         });
-        getContentPane().add(jToggleButtonLength, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 235, 460, 30));
+        Body.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 39, 103, 36));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/udpHeader.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 1040, 200));
+        jPanel2.setMinimumSize(new java.awt.Dimension(259, 18));
+        jPanel2.setPreferredSize(new java.awt.Dimension(259, 18));
 
-        wallaper2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/índice_1.jpg"))); // NOI18N
-        wallaper2.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
-        wallaper2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                wallaper2MouseDragged(evt);
+        jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel6.setLayout(new java.awt.GridBagLayout());
+
+        jLabel34.setText("16");
+        jLabel34.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel34, gridBagConstraints);
+
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel35.setText("17");
+        jLabel35.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel35, gridBagConstraints);
+
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("18");
+        jLabel36.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel36, gridBagConstraints);
+
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel37.setText("19");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel37, gridBagConstraints);
+
+        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel38.setText("20");
+        jLabel38.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel38, gridBagConstraints);
+
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel39.setText("21");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel39, gridBagConstraints);
+
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel40.setText("22");
+        jLabel40.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel40, gridBagConstraints);
+
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel41.setText("23");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 7;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel41, gridBagConstraints);
+
+        jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel42.setText("24");
+        jLabel42.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel42, gridBagConstraints);
+
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel43.setText("25");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel43, gridBagConstraints);
+
+        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel44.setText("26");
+        jLabel44.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 10;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel44, gridBagConstraints);
+
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel45.setText("27");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 11;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel45, gridBagConstraints);
+
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel46.setText("28");
+        jLabel46.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 12;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel46, gridBagConstraints);
+
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel47.setText("29");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 13;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel47, gridBagConstraints);
+
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel48.setText("30");
+        jLabel48.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel48, gridBagConstraints);
+
+        jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel49.setText("31");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel6.add(jLabel49, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        Body.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 39, 326, 36));
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setMinimumSize(new java.awt.Dimension(131, 18));
+        jPanel1.setPreferredSize(new java.awt.Dimension(131, 18));
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+
+        jLabel18.setText(" 0 ");
+        jLabel18.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel18, gridBagConstraints);
+
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText(" 1 ");
+        jLabel19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel19, gridBagConstraints);
+
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel20.setText(" 2 ");
+        jLabel20.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel20, gridBagConstraints);
+
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel21.setText(" 3 ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel21, gridBagConstraints);
+
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel22.setText(" 4 ");
+        jLabel22.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jLabel22, new java.awt.GridBagConstraints());
+
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel23.setText(" 5 ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel23, gridBagConstraints);
+
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText(" 6 ");
+        jLabel24.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel24, gridBagConstraints);
+
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setText(" 7 ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 7;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel25, gridBagConstraints);
+
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel26.setText(" 8  ");
+        jLabel26.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel26, gridBagConstraints);
+
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setText(" 9 ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel27, gridBagConstraints);
+
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel28.setText(" 10 ");
+        jLabel28.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 10;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel28, gridBagConstraints);
+
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel29.setText(" 11 ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 11;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel29, gridBagConstraints);
+
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setText(" 12 ");
+        jLabel30.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 12;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel30, gridBagConstraints);
+
+        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel31.setText(" 13 ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 13;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel31, gridBagConstraints);
+
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel32.setText(" 14 ");
+        jLabel32.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel32, gridBagConstraints);
+
+        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel33.setText(" 15 ");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
+        jPanel1.add(jLabel33, gridBagConstraints);
+
+        Body.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 39, 326, 36));
+
+        jTextField7.setEditable(false);
+        jTextField7.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField7.setText("0");
+        jTextField7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
             }
         });
-        wallaper2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                wallaper2MousePressed(evt);
+        Body.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 76, 103, 36));
+
+        jTextField8.setEditable(false);
+        jTextField8.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField8.setText("32");
+        jTextField8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField8.setPreferredSize(new java.awt.Dimension(54, 22));
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
             }
         });
-        getContentPane().add(wallaper2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 440));
+        Body.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 112, 103, 36));
+
+        jTextField9.setEditable(false);
+        jTextField9.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField9.setText("4");
+        jTextField9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField9ActionPerformed(evt);
+            }
+        });
+        Body.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 112, 103, 36));
+
+        jTextField10.setEditable(false);
+        jTextField10.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        jTextField10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField10.setText("0");
+        jTextField10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jTextField10.setPreferredSize(new java.awt.Dimension(54, 22));
+        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField10ActionPerformed(evt);
+            }
+        });
+        Body.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 76, 103, 36));
+
+        ipDestinationPort.setText("Destination Port");
+        ipDestinationPort.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ipDestinationPort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipDestinationPortActionPerformed(evt);
+            }
+        });
+        Body.add(ipDestinationPort, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 75, 326, 38));
+
+        ipSourcePort.setText("Source Port");
+        ipSourcePort.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ipSourcePort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipSourcePortActionPerformed(evt);
+            }
+        });
+        Body.add(ipSourcePort, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 75, 326, 38));
+
+        ipLength.setText("Length");
+        ipLength.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ipLength.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipLengthActionPerformed(evt);
+            }
+        });
+        Body.add(ipLength, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 110, 326, 38));
+
+        ipCheckSum.setText("Checksum");
+        ipCheckSum.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ipCheckSum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipCheckSumActionPerformed(evt);
+            }
+        });
+        Body.add(ipCheckSum, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 110, 326, 38));
+
+        getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 862, 150));
+
+        IpBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
+        IpBack.setText("Back");
+        IpBack.setAlignmentY(0.0F);
+        IpBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IpBackActionPerformed(evt);
+            }
+        });
+
+        ipSeeFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/find.png"))); // NOI18N
+        ipSeeFilter.setText("See Filter");
+        ipSeeFilter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipSeeFilterActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FooterLayout = new javax.swing.GroupLayout(Footer);
+        Footer.setLayout(FooterLayout);
+        FooterLayout.setHorizontalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addContainerGap(667, Short.MAX_VALUE)
+                .addComponent(ipSeeFilter)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(IpBack, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        FooterLayout.setVerticalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addGap(8, 8, 8)
+                .addGroup(FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(IpBack)
+                    .addComponent(ipSeeFilter))
+                .addGap(8, 8, 8))
+        );
+
+        getContentPane().add(Footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 445, 860, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jToggleButtonLengthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonLengthActionPerformed
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButtonLengthActionPerformed
+    }//GEN-LAST:event_jTextField7ActionPerformed
 
-    /*Allows the return to the previous menu.*/
-    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
         // TODO add your handling code here:
-        SelectTypeFilter obj = new SelectTypeFilter();
-        obj.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_BackActionPerformed
+    }//GEN-LAST:event_jTextField10ActionPerformed
 
-    /*End the application.*/
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_exitActionPerformed
+    }//GEN-LAST:event_jTextField9ActionPerformed
 
-    /*Add the filter created.*/
-    private void DoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoActionPerformed
-        SeeFilter obj = new SeeFilter();
-        obj.setVisible(true);
-        dispose();
-        obj.ret = "UDP";
-        SeeFilter.jTextArea1.setText(toret);
-    }//GEN-LAST:event_DoActionPerformed
-    int x,y;
-    /*Allows you to move the menu across the screen by pressing and holding the background image.*/
-    private void wallaper2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wallaper2MousePressed
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
         // TODO add your handling code here:
-        x = evt.getX();
-        y = evt.getY();
-    }//GEN-LAST:event_wallaper2MousePressed
+    }//GEN-LAST:event_jTextField8ActionPerformed
 
-    private void wallaper2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wallaper2MouseDragged
+    private void ipDestinationPortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipDestinationPortActionPerformed
         // TODO add your handling code here:
-        this.setLocation(this.getLocation().x + evt.getX() - x, this.getLocation().y + evt.getY() - y);
-    }//GEN-LAST:event_wallaper2MouseDragged
-    String toret = "";
-    private void jButtonSourcePortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSourcePortActionPerformed
-        SeeFilter obj = new SeeFilter();
-        String ip = SeeFilter.jTextArea1.getText();
-        if(toret != ""){
-           toret = toret + "\nudp[2:2]";
-        }else{
-            toret = "udp[2:2]";
-        }
-        condition c = new condition();
-        condition.jLabelFilter.setText("udp[2:2]");
-        c.setVisible(true);
-        c.udp = this;
-        c.t = "UDP";
-        dispose();
-    }//GEN-LAST:event_jButtonSourcePortActionPerformed
-    
-    private void jButtonDestinationPortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDestinationPortActionPerformed
         SeeFilter obj = new SeeFilter();
         String ip = SeeFilter.jTextArea1.getText();
         if(toret != ""){
@@ -228,9 +735,27 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         c.udp = this;
         c.t = "UDP";
         dispose();
-    }//GEN-LAST:event_jButtonDestinationPortActionPerformed
+    }//GEN-LAST:event_ipDestinationPortActionPerformed
 
-    private void jButtonLengthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLengthActionPerformed
+    private void ipSourcePortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipSourcePortActionPerformed
+        // TODO add your handling code here:
+        SeeFilter obj = new SeeFilter();
+        String ip = SeeFilter.jTextArea1.getText();
+        if(toret != ""){
+           toret = toret + "\nudp[2:2]";
+        }else{
+            toret = "udp[2:2]";
+        }
+        condition c = new condition();
+        condition.jLabelFilter.setText("udp[2:2]");
+        c.setVisible(true);
+        c.udp = this;
+        c.t = "UDP";
+        dispose();
+    }//GEN-LAST:event_ipSourcePortActionPerformed
+
+    private void ipLengthActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipLengthActionPerformed
+        // TODO add your handling code here:
         SeeFilter obj = new SeeFilter();
         String ip = SeeFilter.jTextArea1.getText();
         if(toret != ""){
@@ -244,9 +769,10 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         c.udp = this;
         c.t = "UDP";
         dispose();
-    }//GEN-LAST:event_jButtonLengthActionPerformed
+    }//GEN-LAST:event_ipLengthActionPerformed
 
-    private void jButtonChecksumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonChecksumActionPerformed
+    private void ipCheckSumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipCheckSumActionPerformed
+        // TODO add your handling code here:
         SeeFilter obj = new SeeFilter();
         String ip = SeeFilter.jTextArea1.getText();
         if(toret != ""){
@@ -260,7 +786,58 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         c.udp = this;
         c.t = "UDP";
         dispose();
-    }//GEN-LAST:event_jButtonChecksumActionPerformed
+    }//GEN-LAST:event_ipCheckSumActionPerformed
+
+    /*Allows the return to the previous menu.*/
+    private void IpBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IpBackActionPerformed
+        // TODO add your handling code here:
+        SelectTypeFilter obj = new SelectTypeFilter();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_IpBackActionPerformed
+
+    String toret = "";
+    /*Add the filter created.*/
+    private void ipSeeFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipSeeFilterActionPerformed
+        // TODO add your handling code here:
+        SeeFilter obj = new SeeFilter();
+        obj.setVisible(true);
+        dispose();
+        obj.ret = "UDP";
+        SeeFilter.jTextArea1.setText(toret);
+    }//GEN-LAST:event_ipSeeFilterActionPerformed
+
+    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField19ActionPerformed
+
+    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField20ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -288,6 +865,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CreateUdpFilter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -298,17 +876,62 @@ public class CreateUdpFilter extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Back;
-    private javax.swing.JButton Do;
-    private javax.swing.JButton exit;
-    private javax.swing.JButton jButtonChecksum;
-    private javax.swing.JButton jButtonDestinationPort;
-    private javax.swing.JButton jButtonLength;
-    private javax.swing.JButton jButtonSourcePort;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JToggleButton jToggleButtonLength;
-    private javax.swing.JLabel wallaper2;
+    private javax.swing.JPanel Body;
+    private javax.swing.JPanel Footer;
+    private javax.swing.JPanel Header;
+    private javax.swing.JButton IpBack;
+    private javax.swing.JLabel filterName;
+    private javax.swing.JButton ipCheckSum;
+    private javax.swing.JButton ipDestinationPort;
+    private javax.swing.JButton ipLength;
+    private javax.swing.JButton ipSeeFilter;
+    private javax.swing.JButton ipSourcePort;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField19;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

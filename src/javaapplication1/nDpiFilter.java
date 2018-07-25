@@ -14,10 +14,11 @@ import javax.swing.DefaultComboBoxModel;
 public class nDpiFilter extends javax.swing.JFrame {
 
     /**
-     * Creates new form nDpiFilter
+     * Creates new form nDpi
      */
     public nDpiFilter() {
         initComponents();
+        this.pack();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setTitle("nDpi Filter");
@@ -46,131 +47,133 @@ public class nDpiFilter extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        exit = new javax.swing.JButton();
-        jButtonDo = new javax.swing.JButton();
-        Back = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabelValues = new javax.swing.JLabel();
+        Header = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        Body = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabelFilter = new javax.swing.JLabel();
         jCheckBoxName = new javax.swing.JCheckBox();
         jCheckBoxNetwork = new javax.swing.JCheckBox();
         jCheckBoxApplication = new javax.swing.JCheckBox();
-        jLabelProtocols = new javax.swing.JLabel();
-        jLabelFilter = new javax.swing.JLabel();
-        jLabelTittle = new javax.swing.JLabel();
-        jComboBoxValues = new javax.swing.JComboBox<>();
-        jComboBoxFormat = new javax.swing.JComboBox<>();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jComboBoxCondition = new javax.swing.JComboBox<>();
+        jPanel3 = new javax.swing.JPanel();
+        jLabelProtocols = new javax.swing.JLabel();
         jComboBoxProtocol = new javax.swing.JComboBox<>();
-        wallaper2 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabelValues = new javax.swing.JLabel();
+        jComboBoxFormat = new javax.swing.JComboBox<>();
+        jComboBoxValues = new javax.swing.JComboBox<>();
+        Footer = new javax.swing.JPanel();
+        IpBack = new javax.swing.JButton();
+        ipSeeFilter = new javax.swing.JButton();
+        ipAddFilter = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
-        addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                formMouseEntered(evt);
-            }
-        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setBackground(new java.awt.Color(255, 0, 0));
-        exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        exit.setForeground(new java.awt.Color(255, 255, 255));
-        exit.setText("x");
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
-            }
-        });
-        getContentPane().add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, -1, -1));
+        Header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButtonDo.setBackground(new java.awt.Color(255, 255, 0));
-        jButtonDo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButtonDo.setText("Add Filter");
-        jButtonDo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonDoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButtonDo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, -1, -1));
+        jLabel4.setFont(new java.awt.Font("UnJamoBatang", 1, 15)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("nDpi Filter");
+        Header.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 862, 33));
 
-        Back.setBackground(new java.awt.Color(255, 102, 0));
-        Back.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Back.setText("Back");
-        Back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, -1, -1));
+        getContentPane().add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 862, 40));
 
-        jButton3.setBackground(new java.awt.Color(0, 255, 0));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton3.setText("See Filter");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 270, 120, -1));
+        Body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Select a condition:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 120, -1));
+        jLabelFilter.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelFilter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelFilter.setText("Select a filter:");
 
-        jLabelValues.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelValues.setText("Select a value:");
-        getContentPane().add(jLabelValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 120, -1));
-
-        jCheckBoxName.setText("protocol name");
+        jCheckBoxName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jCheckBoxName.setText("Protocol Name");
         jCheckBoxName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBoxNameActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBoxName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
-        jCheckBoxNetwork.setText("network");
+        jCheckBoxNetwork.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jCheckBoxNetwork.setText("Network");
         jCheckBoxNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBoxNetworkActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBoxNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, -1, -1));
 
-        jCheckBoxApplication.setText("application");
+        jCheckBoxApplication.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jCheckBoxApplication.setText("Application");
         jCheckBoxApplication.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBoxApplicationActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBoxApplication, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, -1, -1));
 
-        jLabelProtocols.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelProtocols.setText("Select a protocol:");
-        getContentPane().add(jLabelProtocols, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, 20));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(253, 253, 253)
+                .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jCheckBoxName)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
+                .addComponent(jCheckBoxNetwork)
+                .addGap(118, 118, 118)
+                .addComponent(jCheckBoxApplication)
+                .addGap(79, 79, 79))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabelFilter)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBoxName)
+                    .addComponent(jCheckBoxNetwork)
+                    .addComponent(jCheckBoxApplication))
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
 
-        jLabelFilter.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabelFilter.setText("Select a filter:");
-        getContentPane().add(jLabelFilter, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 170, -1));
+        Body.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 680, 110));
 
-        jLabelTittle.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabelTittle.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelTittle.setText("nDpi Filter");
-        getContentPane().add(jLabelTittle, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 150, 30));
-
-        getContentPane().add(jComboBoxValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 210, 70, -1));
-
-        jComboBoxFormat.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "dec", "hex", "oct" }));
-        jComboBoxFormat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBoxFormatActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jComboBoxFormat, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 210, 60, -1));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setText("Select a condition:");
 
         jComboBoxCondition.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "==", "<", ">" }));
-        getContentPane().add(jComboBoxCondition, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 60, -1));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115)
+                .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(303, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Body.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 670, 70));
+
+        jLabelProtocols.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelProtocols.setText("Select a protocol:");
 
         jComboBoxProtocol.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FTP", "POP", "SMTP", "IMAP", "DNS", "IPP", "HTTP", "MDNS", "NTP", "NETBIOS", "NFS", "SSDP", "BGP", "SNMP", "XDMCP", "SMB", "SYSLOG", "DHCP", "PostgreeSQL", "MySQL", "TDS", "DirectDownloadLink", "I23V5", "AppleJuice", "DirectConnect", "Socrates", "WinMX", "VMware", "PANDO", "Filetopia", "iMESH", "Kontiki", "OpenFT", "Kazaa", "Fasttrack", "Gnutella", "eDonkey", "BitTorrent", "OFF", "AVI", "Flash", "OGG", "MPEG", "QuickTime", "RealMedia", "Windowsmedia", "MMS", "XBOX", "QQ", "MOVE", "RTSP", "Feidian", "Icecast", "PPLive", "PPStream", "Zattoo", "SHOUTCast", "SopCast", "TVAnts", "TVUplayer", "VeohTV", "QQLive", "Thunder", "Webthunder", "Soulseek", "GaduGadu", "IRC", "Popo", "Jabber", "MSN", "Oscar", "Yahoo", "Battlefield", "Quake", "VRRP", "Steam", "Halflife2", "World of Warcraft", "Telnet", "STUN", "IPSEC", "GRE", "ICMP", "IGMP", "EGP", "SCTP", "OSPF", "IP in IP", "RTP", "RDP", "VNC", "PCAnywhere", "SSL", "SSH", "USENET", "MGCP", "IAX", "TFTP", "AFP", "StealthNet", "Aimini", "SIP", "Truphone", "ICMPv6", "DHCPv6", "Armagetron", "CrossFire", "Dofus", "Fiesta", "Florensia", "Guildwars", "HTTP Application Activesync", "Kerberos", "LDAP", "MapleStory", "msSQL", "PPTP", "WARCRAFT3", "World of Kung Fu", "MEEBO", "Facebook", "Twitter", "Dropbox", "Gmail", "Google Maps", "YouTube", "Skype", "Google", "DCE RPC", "NetFlow_IPFIX", "sFlow", "HTTP Connect", "HTTP Proxy", "Netflix", "Citrix", "CitrixOnline", "GotoMeeting", "Apple", "Webex", "WhatsApp", "Apple iCloud", "Viber", "Apple iTunes", "Radius", "WindowsUpdate", "TeamViewer", "Tuenti", "LotusNotes", "SAP", "GTP", "UPnP", "LLMNR", "RemoteScan", "Spotify", "H323", "OpenVPN", "NOE", "CiscoVPN", "TeamSpeak", "Tor", "CiscoSkinny", "RTCP", "RSYNC", "Oracle", "Corba", "UbuntuONE", "CNN", "Wikipedia", "Whois-DAS", "Collectd", "Redis", "ZeroMQ", "Megaco", "QUIC", "WhatsApp Voice", "Stracraft", "Teredo", "Snapchat", "Simet", "OpenSignal", "99Taxi", "GloboTV", "Deezer", "Instagram", "Microsoft cloud services", "Twitch", "KakaoTalk Voice", "KakaoTalk Chat", "HotspotShield VPN" }));
         jComboBoxProtocol.addActionListener(new java.awt.event.ActionListener() {
@@ -178,34 +181,148 @@ public class nDpiFilter extends javax.swing.JFrame {
                 jComboBoxProtocolActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBoxProtocol, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 200, -1));
 
-        wallaper2.setBackground(new java.awt.Color(0, 255, 0));
-        wallaper2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        wallaper2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/índice_1.jpg"))); // NOI18N
-        wallaper2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                wallaper2MouseDragged(evt);
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addComponent(jLabelProtocols)
+                .addGap(88, 88, 88)
+                .addComponent(jComboBoxProtocol, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(238, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelProtocols, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxProtocol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        Body.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 720, 70));
+
+        jLabelValues.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelValues.setText("Select a value:");
+
+        jComboBoxFormat.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "dec", "hex", "oct" }));
+        jComboBoxFormat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxFormatActionPerformed(evt);
             }
         });
-        wallaper2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                wallaper2MousePressed(evt);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addComponent(jLabelValues, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(91, 91, 91)
+                .addComponent(jComboBoxFormat, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
+                .addComponent(jComboBoxValues, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(298, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelValues)
+                    .addComponent(jComboBoxFormat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxValues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(26, Short.MAX_VALUE))
+        );
+
+        Body.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 740, 70));
+
+        getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 862, 365));
+
+        IpBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
+        IpBack.setText("Back");
+        IpBack.setAlignmentY(0.0F);
+        IpBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IpBackActionPerformed(evt);
             }
         });
-        getContentPane().add(wallaper2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
+
+        ipSeeFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/find.png"))); // NOI18N
+        ipSeeFilter.setText("See Filter");
+        ipSeeFilter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipSeeFilterActionPerformed(evt);
+            }
+        });
+
+        ipAddFilter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add.png"))); // NOI18N
+        ipAddFilter.setText("Add Filter");
+        ipAddFilter.setMaximumSize(new java.awt.Dimension(93, 23));
+        ipAddFilter.setMinimumSize(new java.awt.Dimension(93, 23));
+        ipAddFilter.setPreferredSize(new java.awt.Dimension(93, 23));
+        ipAddFilter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipAddFilterActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FooterLayout = new javax.swing.GroupLayout(Footer);
+        Footer.setLayout(FooterLayout);
+        FooterLayout.setHorizontalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addContainerGap(540, Short.MAX_VALUE)
+                .addComponent(ipAddFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ipSeeFilter)
+                .addGap(18, 18, 18)
+                .addComponent(IpBack, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        FooterLayout.setVerticalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(ipAddFilter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(FooterLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(IpBack)
+                            .addComponent(ipSeeFilter))))
+                .addGap(19, 19, 19))
+        );
+
+        getContentPane().add(Footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 445, 860, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /*End the application.*/
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+    /*Allows the return to the previous menu.*/
+    private void IpBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IpBackActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_exitActionPerformed
+        SelectTypeFilter obj = new SelectTypeFilter();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_IpBackActionPerformed
+
+    private void ipSeeFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipSeeFilterActionPerformed
+        // TODO add your handling code here:
+        SeeFilter obj = new SeeFilter();
+        obj.setVisible(true);
+        dispose();
+        obj.ret = "nDpi";
+        SeeFilter.jTextArea1.setText(toret);
+    }//GEN-LAST:event_ipSeeFilterActionPerformed
+
     String toret = "";
-    /*Create the nDpi filter with the established conditions.*/
-    private void jButtonDoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDoActionPerformed
+    /*Create the nDpiFilter filter with the established conditions.*/
+    private void ipAddFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipAddFilterActionPerformed
         // TODO add your handling code here:
         if(jCheckBoxNetwork.isSelected()){
             if(toret.isEmpty()){
@@ -214,8 +331,6 @@ public class nDpiFilter extends javax.swing.JFrame {
                 toret += "\nndpi.protocol.network " + jComboBoxCondition.getSelectedItem() + " " + jComboBoxValues.getSelectedItem();
             } 
             jCheckBoxNetwork.setSelected(false);
-            jCheckBoxName.setEnabled(true);
-            jCheckBoxApplication.setEnabled(true);
             jLabel2.setVisible(false);
             jComboBoxCondition.setVisible(false);
             jLabelValues.setVisible(false);
@@ -228,8 +343,6 @@ public class nDpiFilter extends javax.swing.JFrame {
                 toret += "\nndpi.protocol.application " + jComboBoxCondition.getSelectedItem() + " " + jComboBoxValues.getSelectedItem();
             }    
             jCheckBoxApplication.setSelected(false);
-            jCheckBoxName.setEnabled(true);
-            jCheckBoxNetwork.setEnabled(true);
             jLabel2.setVisible(false);
             jComboBoxCondition.setVisible(false);
             jLabelValues.setVisible(false);
@@ -242,97 +355,74 @@ public class nDpiFilter extends javax.swing.JFrame {
                 toret += "\nndpi.protocol.name contains " + jComboBoxProtocol.getSelectedItem();
             }
             jCheckBoxName.setSelected(false);
-            jCheckBoxNetwork.setEnabled(true);
-            jCheckBoxApplication.setEnabled(true);
             jLabelProtocols.setVisible(false);
             jComboBoxProtocol.setVisible(false);
         }
-        
-    }//GEN-LAST:event_jButtonDoActionPerformed
- 
-    /*Allows the return to the previous menu.*/
-    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
-        // TODO add your handling code here:
-        SelectTypeFilter obj = new SelectTypeFilter();
-        obj.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_BackActionPerformed
+    }//GEN-LAST:event_ipAddFilterActionPerformed
 
-    private void formMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_formMouseEntered
-    int x, y;
-    /*Allows you to move the menu across the screen by pressing and holding the background image.*/
-    private void wallaper2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wallaper2MousePressed
-        // TODO add your handling code here:
-        x = evt.getX();
-        y = evt.getY();
-    }//GEN-LAST:event_wallaper2MousePressed
-
-    private void wallaper2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wallaper2MouseDragged
-        // TODO add your handling code here:
-        this.setLocation(this.getLocation().x + evt.getX() - x, this.getLocation().y + evt.getY() - y);
-    }//GEN-LAST:event_wallaper2MouseDragged
-
-    /*Check that the name field is selected. If it is, it prevents others from being selected.*/
     private void jCheckBoxNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxNameActionPerformed
         // TODO add your handling code here:
         if(jCheckBoxName.isSelected()){
-            jCheckBoxNetwork.setEnabled(false);
-            jCheckBoxApplication.setEnabled(false);
+            jLabel2.setVisible(false);
+            jComboBoxCondition.setVisible(false);
+            jLabelValues.setVisible(false);
+            jComboBoxValues.setVisible(false);
+            jComboBoxFormat.setVisible(false);
+            jLabel2.setVisible(false);
+            jComboBoxCondition.setVisible(false);
+            jLabelValues.setVisible(false);
+            jComboBoxValues.setVisible(false);
+            jComboBoxFormat.setVisible(false);
+            jCheckBoxNetwork.setSelected(false);
+            jCheckBoxApplication.setSelected(false);
             jLabelProtocols.setVisible(true);
             jComboBoxProtocol.setVisible(true);
-        }else{
-            jCheckBoxNetwork.setEnabled(true);
-            jCheckBoxApplication.setEnabled(true);
-            jLabelProtocols.setVisible(false);
-            jComboBoxProtocol.setVisible(false);
         }
     }//GEN-LAST:event_jCheckBoxNameActionPerformed
 
-    /*Check that the network field is selected. If it is, it prevents others from being selected.*/
     private void jCheckBoxNetworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxNetworkActionPerformed
         // TODO add your handling code here:
         if(jCheckBoxNetwork.isSelected()){
-            jCheckBoxName.setEnabled(false);
-            jCheckBoxApplication.setEnabled(false);
-            jLabel2.setVisible(true);
-            jComboBoxCondition.setVisible(true);
-            jLabelValues.setVisible(true);
-            jComboBoxValues.setVisible(true);
-            jComboBoxFormat.setVisible(true);
-        }else{
-            jCheckBoxName.setEnabled(true);
-            jCheckBoxApplication.setEnabled(true);
             jLabel2.setVisible(false);
             jComboBoxCondition.setVisible(false);
             jLabelValues.setVisible(false);
             jComboBoxValues.setVisible(false);
             jComboBoxFormat.setVisible(false);
+            jLabelProtocols.setVisible(false);
+            jComboBoxProtocol.setVisible(false);
+            jCheckBoxName.setSelected(false);
+            jCheckBoxApplication.setSelected(false);
+            jLabel2.setVisible(true);
+            jComboBoxCondition.setVisible(true);
+            jLabelValues.setVisible(true);
+            jComboBoxValues.setVisible(true);
+            jComboBoxFormat.setVisible(true);
         }
     }//GEN-LAST:event_jCheckBoxNetworkActionPerformed
 
-    /*Check that the application field is selected. If it is, it prevents others from being selected.*/
     private void jCheckBoxApplicationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxApplicationActionPerformed
         // TODO add your handling code here:
         if(jCheckBoxApplication.isSelected()){
-            jCheckBoxName.setEnabled(false);
-            jCheckBoxNetwork.setEnabled(false);
-            jLabel2.setVisible(true);
-            jComboBoxCondition.setVisible(true);
-            jLabelValues.setVisible(true);
-            jComboBoxValues.setVisible(true);
-            jComboBoxFormat.setVisible(true);
-        }else{
-            jCheckBoxName.setEnabled(true);
-            jCheckBoxNetwork.setEnabled(true);
             jLabel2.setVisible(false);
             jComboBoxCondition.setVisible(false);
             jLabelValues.setVisible(false);
             jComboBoxValues.setVisible(false);
             jComboBoxFormat.setVisible(false);
+            jLabelProtocols.setVisible(false);
+            jComboBoxProtocol.setVisible(false);
+            jCheckBoxName.setSelected(false);
+            jCheckBoxNetwork.setSelected(false);
+            jLabel2.setVisible(true);
+            jComboBoxCondition.setVisible(true);
+            jLabelValues.setVisible(true);
+            jComboBoxValues.setVisible(true);
+            jComboBoxFormat.setVisible(true);
         }
     }//GEN-LAST:event_jCheckBoxApplicationActionPerformed
+
+    private void jComboBoxProtocolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxProtocolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxProtocolActionPerformed
 
     private void jComboBoxFormatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxFormatActionPerformed
         // TODO add your handling code here:
@@ -356,19 +446,6 @@ public class nDpiFilter extends javax.swing.JFrame {
             this.jComboBoxValues.setModel(new DefaultComboBoxModel(values));
         }
     }//GEN-LAST:event_jComboBoxFormatActionPerformed
-
-    private void jComboBoxProtocolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxProtocolActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBoxProtocolActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        SeeFilter obj = new SeeFilter();
-        obj.setVisible(true);
-        dispose();
-        obj.ret = "nDpi";
-        SeeFilter.jTextArea1.setText(toret);
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -396,6 +473,7 @@ public class nDpiFilter extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(nDpiFilter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -406,10 +484,12 @@ public class nDpiFilter extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Back;
-    private javax.swing.JButton exit;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButtonDo;
+    private javax.swing.JPanel Body;
+    private javax.swing.JPanel Footer;
+    private javax.swing.JPanel Header;
+    private javax.swing.JButton IpBack;
+    private javax.swing.JButton ipAddFilter;
+    private javax.swing.JButton ipSeeFilter;
     private javax.swing.JCheckBox jCheckBoxApplication;
     private javax.swing.JCheckBox jCheckBoxName;
     private javax.swing.JCheckBox jCheckBoxNetwork;
@@ -418,10 +498,13 @@ public class nDpiFilter extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBoxProtocol;
     private javax.swing.JComboBox<String> jComboBoxValues;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabelFilter;
     private javax.swing.JLabel jLabelProtocols;
-    private javax.swing.JLabel jLabelTittle;
     private javax.swing.JLabel jLabelValues;
-    private javax.swing.JLabel wallaper2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }

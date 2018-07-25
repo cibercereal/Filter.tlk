@@ -5,11 +5,8 @@
  */
 package javaapplication1;
 
-import java.awt.event.ItemEvent;
-import java.util.ArrayList;
-import javafx.scene.control.ComboBox;
+import static javaapplication1.condition.jLabelFilter;
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.JFrame;
 
 /**
  *
@@ -18,10 +15,11 @@ import javax.swing.JFrame;
 public class condition extends javax.swing.JFrame {
 
     /**
-     * Creates new form condition
+     * Creates new form cond
      */
     public condition() {
         initComponents();
+        this.pack();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setTitle("Select Condition");
@@ -40,67 +38,103 @@ public class condition extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        Header = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        Body = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jComboBoxValues = new javax.swing.JComboBox<>();
+        jTextFieldValues = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
         jRadioBin = new javax.swing.JRadioButton();
         jRadioOct = new javax.swing.JRadioButton();
         jRadioDec = new javax.swing.JRadioButton();
-        Do = new javax.swing.JButton();
-        jComboBoxCondition = new javax.swing.JComboBox<>();
-        jComboBoxValues = new javax.swing.JComboBox<>();
-        jTextFieldValues = new javax.swing.JTextField();
-        jLabelFilter = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabelWallaper = new javax.swing.JLabel();
+        jComboBoxCondition = new javax.swing.JComboBox<>();
+        jPanel3 = new javax.swing.JPanel();
+        jLabelFilter = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        Footer = new javax.swing.JPanel();
+        ipOk = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setText("Filter : ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 80, 30));
+        Header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Value: ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 60, 20));
+        jLabel4.setFont(new java.awt.Font("UnJamoBatang", 1, 15)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Enter the conditions that the filter must meet.");
+        Header.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 862, 33));
 
-        jRadioBin.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        getContentPane().add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 862, 40));
+
+        Body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setText("Value:");
+        Body.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, -1, -1));
+
+        jComboBoxValues.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxValuesActionPerformed(evt);
+            }
+        });
+        Body.add(jComboBoxValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 190, -1));
+        Body.add(jTextFieldValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 190, -1));
+
+        jRadioBin.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jRadioBin.setText("HEX");
         jRadioBin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioBinActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioBin, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, -1, -1));
 
-        jRadioOct.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jRadioOct.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jRadioOct.setText("OCT");
         jRadioOct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioOctActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioOct, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, -1, -1));
 
-        jRadioDec.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jRadioDec.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jRadioDec.setText("DEC");
         jRadioDec.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioDecActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioDec, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, -1, -1));
 
-        Do.setBackground(new java.awt.Color(0, 255, 51));
-        Do.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Do.setText("OK");
-        Do.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Do, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, -1, -1));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(0, 198, Short.MAX_VALUE)
+                .addComponent(jRadioBin)
+                .addGap(78, 78, 78)
+                .addComponent(jRadioOct)
+                .addGap(78, 78, 78)
+                .addComponent(jRadioDec)
+                .addGap(165, 165, 165))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioBin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRadioOct)
+                    .addComponent(jRadioDec))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Body.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 660, 50));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setText("Condition:");
 
         jComboBoxCondition.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "==", ">", "<" }));
         jComboBoxCondition.addActionListener(new java.awt.event.ActionListener() {
@@ -108,38 +142,95 @@ public class condition extends javax.swing.JFrame {
                 jComboBoxConditionActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBoxCondition, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, 60, -1));
 
-        jComboBoxValues.addActionListener(new java.awt.event.ActionListener() {
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 227, Short.MAX_VALUE)
+                .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(170, 170, 170))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+
+        Body.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 550, 60));
+
+        jLabelFilter.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setText("Filter:");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 195, Short.MAX_VALUE)
+                .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(192, 192, 192))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Body.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 650, -1));
+
+        getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 862, 365));
+
+        ipOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ok.png"))); // NOI18N
+        ipOk.setText("OK");
+        ipOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBoxValuesActionPerformed(evt);
+                ipOkActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBoxValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 190, -1));
-        getContentPane().add(jTextFieldValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 190, -1));
 
-        jLabelFilter.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jLabelFilter, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 210, 20));
+        javax.swing.GroupLayout FooterLayout = new javax.swing.GroupLayout(Footer);
+        Footer.setLayout(FooterLayout);
+        FooterLayout.setHorizontalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addContainerGap(763, Short.MAX_VALUE)
+                .addComponent(ipOk)
+                .addGap(32, 32, 32))
+        );
+        FooterLayout.setVerticalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FooterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ipOk)
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Condition: ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 120, 90, -1));
-
-        jLabelWallaper.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/índice_1.jpg"))); // NOI18N
-        getContentPane().add(jLabelWallaper, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 280));
+        getContentPane().add(Footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 445, 860, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBoxConditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxConditionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBoxConditionActionPerformed
     CreateUdpFilter udp = new CreateUdpFilter();
     CreateIpFilter ip = new CreateIpFilter();
     CreateTcpFilter tcp = new CreateTcpFilter();
     String t = "";
     /*Add the selected conditions to the field of the header that you want to create.*/
-    private void DoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoActionPerformed
+    private void ipOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipOkActionPerformed
+        // TODO add your handling code here:
         if(t == "UDP"){
            switch(jComboBoxCondition.getSelectedIndex()){
                 case 0:
@@ -217,14 +308,13 @@ public class condition extends javax.swing.JFrame {
             dispose();
             tcp.setVisible(true); 
         }
-        
-    }//GEN-LAST:event_DoActionPerformed
- 
-    /*Add the field of the selected header in binary.*/
+    }//GEN-LAST:event_ipOkActionPerformed
+
     private void jRadioBinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioBinActionPerformed
+        // TODO add your handling code here:
         if(jRadioBin.isSelected()){
-            jRadioDec.setEnabled(false);
-            jRadioOct.setEnabled(false);
+            jRadioDec.setSelected(false);
+            jRadioOct.setSelected(false);
             if(jLabelFilter.getText() == "udp[0:2]" || jLabelFilter.getText() == "udp[2:2]" || jLabelFilter.getText() == "udp[4:2]" 
                     || jLabelFilter.getText() == "udp[6:2]" || jLabelFilter.getText() == "ip[2:2]" || jLabelFilter.getText() == "ip[4:2]"
                     || jLabelFilter.getText() == "(ip[10:2])" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
@@ -369,8 +459,6 @@ public class condition extends javax.swing.JFrame {
             }
 
         }else{
-            jRadioDec.setEnabled(true);
-            jRadioOct.setEnabled(true);
             this.jTextFieldValues.setText("");
             this.jComboBoxValues.setVisible(false);
             this.jTextFieldValues.setVisible(false);
@@ -378,11 +466,11 @@ public class condition extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jRadioBinActionPerformed
 
-    /*Add the field of the selected header in octal.*/
     private void jRadioOctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioOctActionPerformed
+        // TODO add your handling code here:
         if(jRadioOct.isSelected()){
-            jRadioBin.setEnabled(false);
-            jRadioDec.setEnabled(false);
+            jRadioBin.setSelected(false);
+            jRadioDec.setSelected(false);
             if(jLabelFilter.getText() == "udp[0:2]" || jLabelFilter.getText() == "udp[2:2]" || jLabelFilter.getText() == "udp[4:2]" 
                     || jLabelFilter.getText() == "udp[6:2]" || jLabelFilter.getText() == "ip[2:2]" || jLabelFilter.getText() == "ip[4:2]"
                     || jLabelFilter.getText() == "(ip[10:2])" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
@@ -529,8 +617,6 @@ public class condition extends javax.swing.JFrame {
             }
 
         }else{
-            jRadioDec.setEnabled(true);
-            jRadioBin.setEnabled(true);
             this.jTextFieldValues.setText("");
             this.jComboBoxValues.setVisible(false);
             this.jTextFieldValues.setVisible(false);
@@ -538,11 +624,19 @@ public class condition extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jRadioOctActionPerformed
 
-    /*Add the field of the selected header in decimal.*/
+    private void jComboBoxConditionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxConditionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxConditionActionPerformed
+
+    private void jComboBoxValuesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxValuesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxValuesActionPerformed
+
     private void jRadioDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioDecActionPerformed
-       if(jRadioDec.isSelected()){
-            jRadioBin.setEnabled(false);
-            jRadioOct.setEnabled(false);
+        // TODO add your handling code here:
+        if(jRadioDec.isSelected()){
+            jRadioBin.setSelected(false);
+            jRadioOct.setSelected(false);
             if(jLabelFilter.getText() == "udp[0:2]" || jLabelFilter.getText() == "udp[2:2]" || jLabelFilter.getText() == "udp[4:2]" 
                     || jLabelFilter.getText() == "udp[6:2]" || jLabelFilter.getText() == "ip[2:2]" || jLabelFilter.getText() == "ip[4:2]"
                     || jLabelFilter.getText() == "(ip[10:2])" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
@@ -687,8 +781,6 @@ public class condition extends javax.swing.JFrame {
             }
 
         }else{
-            jRadioOct.setEnabled(true);
-            jRadioBin.setEnabled(true);
             this.jTextFieldValues.setText("");
             this.jComboBoxValues.setVisible(false);
             this.jTextFieldValues.setVisible(false);
@@ -697,11 +789,6 @@ public class condition extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jRadioDecActionPerformed
 
-    private void jComboBoxValuesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxValuesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBoxValuesActionPerformed
-
-    
     /**
      * @param args the command line arguments
      */
@@ -728,6 +815,7 @@ public class condition extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(condition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -738,14 +826,20 @@ public class condition extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Do;
+    private javax.swing.JPanel Body;
+    private javax.swing.JPanel Footer;
+    private javax.swing.JPanel Header;
+    private javax.swing.JButton ipOk;
     private javax.swing.JComboBox<String> jComboBoxCondition;
     private javax.swing.JComboBox<String> jComboBoxValues;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     public static javax.swing.JLabel jLabelFilter;
-    private javax.swing.JLabel jLabelWallaper;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton jRadioBin;
     private javax.swing.JRadioButton jRadioDec;
     private javax.swing.JRadioButton jRadioOct;

@@ -5,6 +5,7 @@
  */
 package javaapplication1;
 
+
 import javax.swing.JOptionPane;
 
 /**
@@ -14,13 +15,14 @@ import javax.swing.JOptionPane;
 public class SelectTypeFilter extends javax.swing.JFrame {
 
     /**
-     * Creates new form SelectTypeFilter
+     * Creates new form SelectType
      */
     public SelectTypeFilter() {
         initComponents();
+        this.pack();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
-        this.setTitle("Select Type");
+        this.setTitle("Select Type Filter");
         MenuFrame mf = new MenuFrame();
         this.setIconImage(mf.getIconImage());
     }
@@ -34,134 +36,205 @@ public class SelectTypeFilter extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        exit = new javax.swing.JButton();
-        Back = new javax.swing.JButton();
-        Do = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        Header = new javax.swing.JPanel();
+        Body = new javax.swing.JPanel();
         checkUdp = new javax.swing.JCheckBox();
         checkTcp = new javax.swing.JCheckBox();
         checkIp = new javax.swing.JCheckBox();
         checknDpi = new javax.swing.JCheckBox();
-        wallaper2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        Footer = new javax.swing.JPanel();
+        ipBack = new javax.swing.JButton();
+        ipDo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        exit.setBackground(new java.awt.Color(255, 0, 0));
-        exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        exit.setForeground(new java.awt.Color(255, 255, 255));
-        exit.setText("x");
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
-            }
-        });
-        getContentPane().add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, -1, -1));
+        Header.setAlignmentX(0.0F);
+        Header.setAlignmentY(0.0F);
+        Header.setMinimumSize(new java.awt.Dimension(860, 38));
 
-        Back.setBackground(new java.awt.Color(255, 102, 0));
-        Back.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Back.setText("Back");
-        Back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
+        javax.swing.GroupLayout HeaderLayout = new javax.swing.GroupLayout(Header);
+        Header.setLayout(HeaderLayout);
+        HeaderLayout.setHorizontalGroup(
+            HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 862, Short.MAX_VALUE)
+        );
+        HeaderLayout.setVerticalGroup(
+            HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
 
-        Do.setBackground(new java.awt.Color(0, 255, 51));
-        Do.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Do.setText("Do");
-        Do.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Do, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, -1, -1));
+        getContentPane().add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 862, 40));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jLabel2.setText("Select the filter´s type to create a filter.");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 260, 50));
+        Body.setAlignmentX(0.0F);
+        Body.setAlignmentY(0.0F);
+        Body.setMinimumSize(new java.awt.Dimension(860, 362));
+        Body.setPreferredSize(new java.awt.Dimension(860, 362));
 
+        checkUdp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         checkUdp.setText("UDP");
         checkUdp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkUdpActionPerformed(evt);
             }
         });
-        getContentPane().add(checkUdp, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
+        checkTcp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         checkTcp.setText("TCP");
         checkTcp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkTcpActionPerformed(evt);
             }
         });
-        getContentPane().add(checkTcp, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, -1));
 
+        checkIp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         checkIp.setText("IP");
         checkIp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkIpActionPerformed(evt);
             }
         });
-        getContentPane().add(checkIp, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 40, -1));
 
+        checknDpi.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         checknDpi.setText("nDpi");
         checknDpi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checknDpiActionPerformed(evt);
             }
         });
-        getContentPane().add(checknDpi, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, -1, -1));
 
-        wallaper2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/índice_1.jpg"))); // NOI18N
-        wallaper2.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
-        wallaper2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                wallaper2MouseDragged(evt);
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("SELECT THE FILTER´S TYPE TO CREATE A FILTER.");
+
+        javax.swing.GroupLayout BodyLayout = new javax.swing.GroupLayout(Body);
+        Body.setLayout(BodyLayout);
+        BodyLayout.setHorizontalGroup(
+            BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BodyLayout.createSequentialGroup()
+                .addContainerGap(183, Short.MAX_VALUE)
+                .addComponent(checkUdp)
+                .addGap(92, 92, 92)
+                .addComponent(checkTcp)
+                .addGap(91, 91, 91)
+                .addComponent(checkIp)
+                .addGap(91, 91, 91)
+                .addComponent(checknDpi)
+                .addGap(199, 199, 199))
+            .addGroup(BodyLayout.createSequentialGroup()
+                .addGap(236, 236, 236)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        BodyLayout.setVerticalGroup(
+            BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BodyLayout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                .addGap(127, 127, 127)
+                .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(checkUdp)
+                    .addComponent(checkTcp)
+                    .addComponent(checkIp)
+                    .addComponent(checknDpi))
+                .addContainerGap(173, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 862, 365));
+
+        Footer.setPreferredSize(new java.awt.Dimension(852, 39));
+
+        ipBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
+        ipBack.setAlignmentY(0.0F);
+        ipBack.setLabel("Back");
+        ipBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipBackActionPerformed(evt);
             }
         });
-        wallaper2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                wallaper2MousePressed(evt);
+
+        ipDo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/do.png"))); // NOI18N
+        ipDo.setText("Do");
+        ipDo.setToolTipText("");
+        ipDo.setAlignmentY(0.0F);
+        ipDo.setMaximumSize(new java.awt.Dimension(67, 23));
+        ipDo.setMinimumSize(new java.awt.Dimension(67, 23));
+        ipDo.setPreferredSize(new java.awt.Dimension(67, 23));
+        ipDo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ipDoActionPerformed(evt);
             }
         });
-        getContentPane().add(wallaper2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 220));
+
+        javax.swing.GroupLayout FooterLayout = new javax.swing.GroupLayout(Footer);
+        Footer.setLayout(FooterLayout);
+        FooterLayout.setHorizontalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
+                .addContainerGap(680, Short.MAX_VALUE)
+                .addComponent(ipDo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ipBack, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        FooterLayout.setVerticalGroup(
+            FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FooterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ipDo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ipBack, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(Footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 445, 860, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+
     /*Check that the udp button is selected. If selected, it prevents the selection of the rest.*/
     private void checkUdpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkUdpActionPerformed
+        // TODO add your handling code here:
         if(checkUdp.isSelected()){
-            checkTcp.setEnabled(false);
-            checkIp.setEnabled(false);
-            checknDpi.setEnabled(false);
-        }else{
-            checkTcp.setEnabled(true);
-            checkIp.setEnabled(true);
-            checknDpi.setEnabled(true);
+            checkTcp.setSelected(false);
+            checkIp.setSelected(false);
+            checknDpi.setSelected(false);
         }
     }//GEN-LAST:event_checkUdpActionPerformed
 
-    /*End the application.*/
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+    /*Check that the ndpi button is selected. If selected, it prevents the selection of the rest.*/
+    private void checknDpiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checknDpiActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_exitActionPerformed
+        if(checknDpi.isSelected()){
+            checkTcp.setSelected(false);
+            checkIp.setSelected(false);
+            checkUdp.setSelected(false);
+        }
+    }//GEN-LAST:event_checknDpiActionPerformed
 
-    /*Allows the return to the previous menu.*/
-    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+    /*Check that the tcp button is selected. If selected, it prevents the selection of the rest.*/
+    private void checkTcpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkTcpActionPerformed
         // TODO add your handling code here:
-        MenuFrame obj = new MenuFrame();
-        obj.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_BackActionPerformed
+        if(checkTcp.isSelected()){
+            checkUdp.setSelected(false);
+            checkIp.setSelected(false);
+            checknDpi.setSelected(false);
+        }
+    }//GEN-LAST:event_checkTcpActionPerformed
+
+    /*Check that the ip button is selected. If selected, it prevents the selection of the rest.*/
+    private void checkIpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkIpActionPerformed
+        // TODO add your handling code here:
+        if(checkIp.isSelected()){
+            checkTcp.setSelected(false);
+            checkUdp.setSelected(false);
+            checknDpi.setSelected(false);
+        }
+    }//GEN-LAST:event_checkIpActionPerformed
+
     String text = "";
-    
     /*Initializes the filter creation menu that has been selected.*/
-    private void DoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoActionPerformed
+    private void ipDoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipDoActionPerformed
         // TODO add your handling code here:
         if(checkTcp.isSelected()){
             CreateTcpFilter obj = new CreateTcpFilter();
@@ -186,58 +259,15 @@ public class SelectTypeFilter extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(this, "Select a type.", "Error", JOptionPane.ERROR_MESSAGE);
         } 
-    }//GEN-LAST:event_DoActionPerformed
+    }//GEN-LAST:event_ipDoActionPerformed
 
-    /*Allows you to move the menu across the screen by pressing and holding the background image.*/
-    private void wallaper2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wallaper2MouseDragged
+    /*Allows the return to the previous menu.*/
+    private void ipBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipBackActionPerformed
         // TODO add your handling code here:
-        this.setLocation(this.getLocation().x + evt.getX() - x, this.getLocation().y + evt.getY() - y);
-    }//GEN-LAST:event_wallaper2MouseDragged
-    int x,y;
-    private void wallaper2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wallaper2MousePressed
-        // TODO add your handling code here:
-        x = evt.getX();
-        y = evt.getY();
-    }//GEN-LAST:event_wallaper2MousePressed
-
-    /*Check that the ip button is selected. If selected, it prevents the selection of the rest.*/
-    private void checkIpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkIpActionPerformed
-        if(checkIp.isSelected()){
-            checkTcp.setEnabled(false);
-            checkUdp.setEnabled(false);
-            checknDpi.setEnabled(false);
-        }else{
-            checkTcp.setEnabled(true);
-            checkUdp.setEnabled(true);
-            checknDpi.setEnabled(true);
-        }
-    }//GEN-LAST:event_checkIpActionPerformed
-
-    /*Check that the tcp button is selected. If selected, it prevents the selection of the rest.*/
-    private void checkTcpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkTcpActionPerformed
-        if(checkTcp.isSelected()){
-            checkUdp.setEnabled(false);
-            checkIp.setEnabled(false);
-            checknDpi.setEnabled(false);
-        }else{
-            checkUdp.setEnabled(true);
-            checkIp.setEnabled(true);
-            checknDpi.setEnabled(true);
-        }
-    }//GEN-LAST:event_checkTcpActionPerformed
-
-    /*Check that the ndpi button is selected. If selected, it prevents the selection of the rest.*/
-    private void checknDpiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checknDpiActionPerformed
-        if(checknDpi.isSelected()){
-            checkTcp.setEnabled(false);
-            checkIp.setEnabled(false);
-            checkUdp.setEnabled(false);
-        }else{
-            checkTcp.setEnabled(true);
-            checkIp.setEnabled(true);
-            checkUdp.setEnabled(true);
-        }
-    }//GEN-LAST:event_checknDpiActionPerformed
+         MenuFrame obj = new MenuFrame();
+        obj.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ipBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -265,6 +295,7 @@ public class SelectTypeFilter extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(SelectTypeFilter.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -275,14 +306,15 @@ public class SelectTypeFilter extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Back;
-    private javax.swing.JButton Do;
-    public static javax.swing.JCheckBox checkIp;
-    public static javax.swing.JCheckBox checkTcp;
-    public static javax.swing.JCheckBox checkUdp;
+    private javax.swing.JPanel Body;
+    private javax.swing.JPanel Footer;
+    private javax.swing.JPanel Header;
+    private javax.swing.JCheckBox checkIp;
+    private javax.swing.JCheckBox checkTcp;
+    private javax.swing.JCheckBox checkUdp;
     private javax.swing.JCheckBox checknDpi;
-    private javax.swing.JButton exit;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel wallaper2;
+    private javax.swing.JButton ipBack;
+    private javax.swing.JButton ipDo;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
