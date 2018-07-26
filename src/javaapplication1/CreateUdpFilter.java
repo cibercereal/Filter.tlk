@@ -415,8 +415,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel18, gridBagConstraints);
 
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -426,8 +424,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel19, gridBagConstraints);
 
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -437,8 +433,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel20, gridBagConstraints);
 
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -447,14 +441,14 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel21, gridBagConstraints);
 
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel22.setText(" 4 ");
         jLabel22.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 1, new java.awt.Color(0, 0, 0)));
-        jPanel1.add(jLabel22, new java.awt.GridBagConstraints());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanel1.add(jLabel22, gridBagConstraints);
 
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel23.setText(" 5 ");
@@ -462,8 +456,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel23, gridBagConstraints);
 
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -473,8 +465,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel24, gridBagConstraints);
 
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -483,8 +473,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel25, gridBagConstraints);
 
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -494,8 +482,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel26, gridBagConstraints);
 
         jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -504,8 +490,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel27, gridBagConstraints);
 
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -515,8 +499,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 10;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel28, gridBagConstraints);
 
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -525,8 +507,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 11;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel29, gridBagConstraints);
 
         jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -536,8 +516,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 12;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel30, gridBagConstraints);
 
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -546,8 +524,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 13;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel31, gridBagConstraints);
 
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -557,8 +533,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 14;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel32, gridBagConstraints);
 
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -567,8 +541,6 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         gridBagConstraints.gridx = 15;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE;
         jPanel1.add(jLabel33, gridBagConstraints);
 
         Body.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 39, 326, 36));
@@ -623,6 +595,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 76, 103, 36));
 
+        ipDestinationPort.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipDestinationPort.setText("Destination Port");
         ipDestinationPort.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipDestinationPort.addActionListener(new java.awt.event.ActionListener() {
@@ -632,6 +605,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         });
         Body.add(ipDestinationPort, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 75, 326, 38));
 
+        ipSourcePort.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipSourcePort.setText("Source Port");
         ipSourcePort.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipSourcePort.addActionListener(new java.awt.event.ActionListener() {
@@ -641,6 +615,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         });
         Body.add(ipSourcePort, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 75, 326, 38));
 
+        ipLength.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipLength.setText("Length");
         ipLength.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipLength.addActionListener(new java.awt.event.ActionListener() {
@@ -650,6 +625,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         });
         Body.add(ipLength, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 110, 326, 38));
 
+        ipCheckSum.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipCheckSum.setText("Checksum");
         ipCheckSum.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipCheckSum.addActionListener(new java.awt.event.ActionListener() {
@@ -720,6 +696,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField8ActionPerformed
 
+    String var = "";
     private void ipDestinationPortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipDestinationPortActionPerformed
         // TODO add your handling code here:
         SeeFilter obj = new SeeFilter();
@@ -731,6 +708,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("udp[0:2]");
+        var = "udp[0:2]";
         c.setVisible(true);
         c.udp = this;
         c.t = "UDP";
@@ -748,6 +726,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("udp[2:2]");
+        var = "udp[2:2]";
         c.setVisible(true);
         c.udp = this;
         c.t = "UDP";
@@ -765,6 +744,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("udp[4:2]");
+        var = "udp[4:2]";
         c.setVisible(true);
         c.udp = this;
         c.t = "UDP";
@@ -782,6 +762,7 @@ public class CreateUdpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("udp[6:2]");
+        var = "udp[6:2]";
         c.setVisible(true);
         c.udp = this;
         c.t = "UDP";

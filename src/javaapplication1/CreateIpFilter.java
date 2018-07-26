@@ -21,7 +21,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         initComponents();
         this.pack();
         this.setLocationRelativeTo(null);
-        //this.setResizable(false);
+        this.setResizable(false);
         this.setTitle("Create IP Filter");
         MenuFrame mf = new MenuFrame();
         this.setIconImage(mf.getIconImage());
@@ -640,6 +640,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 38, 103, 36));
 
+        ipVersion.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipVersion.setText("Version");
         ipVersion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipVersion.addActionListener(new java.awt.event.ActionListener() {
@@ -649,6 +650,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipVersion, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 38, 81, 36));
 
+        ipIHL.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipIHL.setText("IHL");
         ipIHL.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipIHL.addActionListener(new java.awt.event.ActionListener() {
@@ -658,6 +660,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipIHL, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 38, 82, 36));
 
+        ipDSCP.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipDSCP.setText("DSCP");
         ipDSCP.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipDSCP.addActionListener(new java.awt.event.ActionListener() {
@@ -667,6 +670,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipDSCP, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 38, 117, 36));
 
+        ipECN.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipECN.setText("ECN");
         ipECN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipECN.addActionListener(new java.awt.event.ActionListener() {
@@ -676,6 +680,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipECN, new org.netbeans.lib.awtextra.AbsoluteConstraints(488, 38, 46, 36));
 
+        ipLength.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipLength.setText("Total Length");
         ipLength.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipLength.addActionListener(new java.awt.event.ActionListener() {
@@ -710,6 +715,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 74, 103, 36));
 
+        ipIdentification.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipIdentification.setText("Identification");
         ipIdentification.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipIdentification.addActionListener(new java.awt.event.ActionListener() {
@@ -719,6 +725,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipIdentification, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 74, 326, 36));
 
+        ipFlags.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipFlags.setText("Flags");
         ipFlags.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipFlags.addActionListener(new java.awt.event.ActionListener() {
@@ -728,6 +735,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipFlags, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 74, 65, 36));
 
+        ipFOfsset.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipFOfsset.setText("Fragment Offset");
         ipFOfsset.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipFOfsset.addActionListener(new java.awt.event.ActionListener() {
@@ -762,6 +770,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 110, 103, 36));
 
+        ipTTL.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipTTL.setText("Time to Live (TTL)");
         ipTTL.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipTTL.addActionListener(new java.awt.event.ActionListener() {
@@ -771,6 +780,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipTTL, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 110, 163, 36));
 
+        ipProtocol.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipProtocol.setText("Protocol");
         ipProtocol.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipProtocol.addActionListener(new java.awt.event.ActionListener() {
@@ -780,6 +790,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(ipProtocol, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 110, 163, 36));
 
+        ipHeaderCheckSum.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipHeaderCheckSum.setText("Header Checksum");
         ipHeaderCheckSum.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipHeaderCheckSum.addActionListener(new java.awt.event.ActionListener() {
@@ -814,6 +825,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 146, 103, 36));
 
+        ipSourceIP.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipSourceIP.setText("Source IP Address");
         ipSourceIP.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipSourceIP.addActionListener(new java.awt.event.ActionListener() {
@@ -848,6 +860,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 182, 103, 36));
 
+        ipDestIP.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipDestIP.setText("Destination IP Address");
         ipDestIP.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipDestIP.addActionListener(new java.awt.event.ActionListener() {
@@ -882,6 +895,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 218, 103, 36));
 
+        ipOptions.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipOptions.setText("Options (IF HL>5)");
         ipOptions.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipOptions.addActionListener(new java.awt.event.ActionListener() {
@@ -1062,6 +1076,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("((ip[1:1] << 6) >> 6)");
+        var = "ip[1]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1079,6 +1094,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("ip[2:2]");
+        var = "ip[2:2]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1104,6 +1120,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(ip[6:1] >> 5)");
+        var = "ip[6]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1121,6 +1138,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("((ip[6:2] << 3) >> 3)");
+        var = "ip[6:2]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1137,7 +1155,8 @@ public class CreateIpFilter extends javax.swing.JFrame {
             toret = "ip[10:2]";
         }
         condition c = new condition();
-        condition.jLabelFilter.setText("(ip[10:2])");
+        condition.jLabelFilter.setText("ip[10:2]");
+        var = "ip[10:2]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1186,7 +1205,8 @@ public class CreateIpFilter extends javax.swing.JFrame {
             toret = "ip[20:16]";
         }
         condition c = new condition();
-        condition.jLabelFilter.setText("(ip[20:16])");
+        condition.jLabelFilter.setText("ip[20:16]");
+        var = "ip[20:16]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1217,6 +1237,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField27ActionPerformed
 
+    String var = "";
     String toret = "";
     private void ipVersionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipVersionActionPerformed
         // TODO add your handling code here:
@@ -1229,6 +1250,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(ip[0:1] >> 4)");
+        var = "ip[0]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1245,6 +1267,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("((ip[0:1] << 4) >> 4)");
+        var = "ip[0]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1262,6 +1285,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(ip[1:1] >> 2)");
+        var = "ip[1]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1279,6 +1303,7 @@ public class CreateIpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("ip[4:2]");
+        var = "ip[4:2]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1295,7 +1320,8 @@ public class CreateIpFilter extends javax.swing.JFrame {
             toret = "ip[8:1]";
         }
         condition c = new condition();
-        condition.jLabelFilter.setText("(ip[8:1])");
+        condition.jLabelFilter.setText("ip[8:1]");
+        var = "ip[8:1]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1312,7 +1338,8 @@ public class CreateIpFilter extends javax.swing.JFrame {
              toret = "ip[9:1]";
         }
         condition c = new condition();
-        condition.jLabelFilter.setText("(ip[9:1])");
+        condition.jLabelFilter.setText("ip[9:1]");
+        var = "ip[9:1]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1329,7 +1356,8 @@ public class CreateIpFilter extends javax.swing.JFrame {
             toret = "ip[12:4]";
         }
         condition c = new condition();
-        condition.jLabelFilter.setText("(ip[12:4])");
+        condition.jLabelFilter.setText("ip[12:4]");
+        var = "ip[12:4]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";
@@ -1346,7 +1374,8 @@ public class CreateIpFilter extends javax.swing.JFrame {
             toret = "ip[16:4]";
         }
         condition c = new condition();
-        condition.jLabelFilter.setText("(ip[16:4])");
+        condition.jLabelFilter.setText("ip[16:4]");
+        var = "ip[16:4]";
         c.setVisible(true);
         c.ip = this;
         c.t = "IP";

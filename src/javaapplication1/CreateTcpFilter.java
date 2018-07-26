@@ -640,6 +640,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 38, 103, 36));
 
+        ipSourcePort.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipSourcePort.setText("Source Port");
         ipSourcePort.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipSourcePort.addActionListener(new java.awt.event.ActionListener() {
@@ -649,6 +650,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         });
         Body.add(ipSourcePort, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 38, 326, 36));
 
+        ipDestinationPort.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipDestinationPort.setText("Destination Port");
         ipDestinationPort.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipDestinationPort.addActionListener(new java.awt.event.ActionListener() {
@@ -683,6 +685,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 74, 103, 36));
 
+        ipSequenceNumber.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipSequenceNumber.setText("Sequence Number");
         ipSequenceNumber.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipSequenceNumber.addActionListener(new java.awt.event.ActionListener() {
@@ -717,6 +720,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 110, 103, 36));
 
+        ipAcknowledgmentNumber.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipAcknowledgmentNumber.setText("Acknowledgment Number");
         ipAcknowledgmentNumber.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipAcknowledgmentNumber.addActionListener(new java.awt.event.ActionListener() {
@@ -736,7 +740,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 jTextField16ActionPerformed(evt);
             }
         });
-        Body.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 146, 103, 36));
+        Body.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 146, 103, 58));
 
         jTextField17.setEditable(false);
         jTextField17.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -749,7 +753,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 jTextField17ActionPerformed(evt);
             }
         });
-        Body.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 146, 103, 36));
+        Body.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 146, 103, 58));
 
         jTextField18.setEditable(false);
         jTextField18.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -761,7 +765,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 jTextField18ActionPerformed(evt);
             }
         });
-        Body.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 182, 103, 36));
+        Body.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 204, 103, 36));
 
         jTextField19.setEditable(false);
         jTextField19.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -774,8 +778,9 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 jTextField19ActionPerformed(evt);
             }
         });
-        Body.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 182, 103, 36));
+        Body.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 204, 103, 36));
 
+        ipChecksum.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipChecksum.setText("Checksum");
         ipChecksum.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipChecksum.addActionListener(new java.awt.event.ActionListener() {
@@ -783,7 +788,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 ipChecksumActionPerformed(evt);
             }
         });
-        Body.add(ipChecksum, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 182, 326, 36));
+        Body.add(ipChecksum, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 204, 326, 36));
 
         jTextField20.setEditable(false);
         jTextField20.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -795,7 +800,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 jTextField20ActionPerformed(evt);
             }
         });
-        Body.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 218, 103, 72));
+        Body.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 240, 103, 50));
 
         jTextField21.setEditable(false);
         jTextField21.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -808,8 +813,9 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 jTextField21ActionPerformed(evt);
             }
         });
-        Body.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 218, 103, 72));
+        Body.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 240, 103, 50));
 
+        ipOptions.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipOptions.setText("Options");
         ipOptions.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipOptions.addActionListener(new java.awt.event.ActionListener() {
@@ -817,7 +823,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 ipOptionsActionPerformed(evt);
             }
         });
-        Body.add(ipOptions, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 218, 652, 144));
+        Body.add(ipOptions, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 240, 652, 122));
 
         jTextField22.setEditable(false);
         jTextField22.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -844,6 +850,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         });
         Body.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 290, 103, 72));
 
+        ipWindowSize.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipWindowSize.setText("Window Size");
         ipWindowSize.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipWindowSize.addActionListener(new java.awt.event.ActionListener() {
@@ -851,18 +858,20 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 ipWindowSizeActionPerformed(evt);
             }
         });
-        Body.add(ipWindowSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 146, 326, 36));
+        Body.add(ipWindowSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 146, 326, 58));
 
-        ipNS.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipNS.setText("NS");
+        ipNS.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipNS.setText("<html><p align='center'>N<br>S</p></html>");
         ipNS.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ipNS.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ipNS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipNSActionPerformed(evt);
             }
         });
-        Body.add(ipNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 146, 19, 36));
+        Body.add(ipNS, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 146, 19, 58));
 
+        ipUrgentPointer1.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipUrgentPointer1.setText("Urgent Pointer");
         ipUrgentPointer1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipUrgentPointer1.addActionListener(new java.awt.event.ActionListener() {
@@ -870,8 +879,9 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 ipUrgentPointer1ActionPerformed(evt);
             }
         });
-        Body.add(ipUrgentPointer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 182, 326, 36));
+        Body.add(ipUrgentPointer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 204, 326, 36));
 
+        ipDataOffset.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
         ipDataOffset.setText("Data Offset");
         ipDataOffset.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipDataOffset.addActionListener(new java.awt.event.ActionListener() {
@@ -879,96 +889,98 @@ public class CreateTcpFilter extends javax.swing.JFrame {
                 ipDataOffsetActionPerformed(evt);
             }
         });
-        Body.add(ipDataOffset, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 146, 80, 36));
+        Body.add(ipDataOffset, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 146, 80, 58));
 
-        ipReserved.setText("Reserved");
+        ipReserved.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipReserved.setText("<html><p align='center'>Reserved 0 0 0 0</p></html>");
         ipReserved.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        ipReserved.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ipReserved.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipReservedActionPerformed(evt);
             }
         });
-        Body.add(ipReserved, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 146, 64, 36));
+        Body.add(ipReserved, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 146, 64, 58));
 
-        ipCWR.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipCWR.setText("CWR");
+        ipCWR.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipCWR.setText("<html><p align='center'>C<br>W<br>R</p></html>");
         ipCWR.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipCWR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipCWRActionPerformed(evt);
             }
         });
-        Body.add(ipCWR, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 146, 21, 36));
+        Body.add(ipCWR, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 146, 21, 58));
 
-        ipECE.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipECE.setText("ECE");
+        ipECE.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipECE.setText("<html><p align='center'>E<br>C<br>E</p></html>");
         ipECE.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipECE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipECEActionPerformed(evt);
             }
         });
-        Body.add(ipECE, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 146, 19, 36));
+        Body.add(ipECE, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 146, 19, 58));
 
-        ipURG.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipURG.setText("URG");
+        ipURG.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipURG.setText("<html><p align='center'>U<br>R<br>G</p></html>");
         ipURG.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipURG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipURGActionPerformed(evt);
             }
         });
-        Body.add(ipURG, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 146, 19, 36));
+        Body.add(ipURG, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 146, 19, 58));
 
-        ipACK.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipACK.setText("ACK");
+        ipACK.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipACK.setText("<html><p align='center'>A<br>C<br>K</p></html>");
         ipACK.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipACK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipACKActionPerformed(evt);
             }
         });
-        Body.add(ipACK, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 146, 21, 36));
+        Body.add(ipACK, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 146, 21, 58));
 
-        ipPSH.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipPSH.setText("PSH");
+        ipPSH.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipPSH.setText("<html><p align='center'>P<br>S<br>H</p></html>");
         ipPSH.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipPSH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipPSHActionPerformed(evt);
             }
         });
-        Body.add(ipPSH, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 146, 21, 36));
+        Body.add(ipPSH, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 146, 21, 58));
 
-        ipRST.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipRST.setText("RST");
+        ipRST.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipRST.setText("<html><p align='center'>R<br>S<br>T</p></html>");
         ipRST.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipRST.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipRSTActionPerformed(evt);
             }
         });
-        Body.add(ipRST, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 146, 21, 36));
+        Body.add(ipRST, new org.netbeans.lib.awtextra.AbsoluteConstraints(471, 146, 21, 58));
 
-        ipSYN.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipSYN.setText("SYN");
+        ipSYN.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipSYN.setText("<html><p align='center'>S<br>Y<br>N</p></html>");
         ipSYN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipSYN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipSYNActionPerformed(evt);
             }
         });
-        Body.add(ipSYN, new org.netbeans.lib.awtextra.AbsoluteConstraints(492, 146, 21, 36));
+        Body.add(ipSYN, new org.netbeans.lib.awtextra.AbsoluteConstraints(492, 146, 21, 58));
 
-        ipFIN.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        ipFIN.setText("FIN");
+        ipFIN.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
+        ipFIN.setText("<html><p align='center'>F<br>I<br>N</p></html>");
         ipFIN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         ipFIN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ipFINActionPerformed(evt);
             }
         });
-        Body.add(ipFIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 146, 21, 36));
+        Body.add(ipFIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 146, 21, 58));
 
         getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 862, 365));
 
@@ -1055,6 +1067,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField11ActionPerformed
     String toret = "";
+    String var = "";
     private void ipDestinationPortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipDestinationPortActionPerformed
         // TODO add your handling code here:
         SeeFilter obj = new SeeFilter();
@@ -1066,6 +1079,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[2:2]");
+        var = "tcp[2:2]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1091,6 +1105,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[4:4]");
+        var = "tcp[4:4]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1116,6 +1131,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[8:4]");
+        var = "tcp[8:4]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1149,6 +1165,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[16:2]");
+        var = "tcp[16:2]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1174,6 +1191,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[20:40]");
+        var = "tcp[20:40]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1199,6 +1217,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[14:2]");
+        var = "tcp[14:4]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1216,6 +1235,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[12:1] & 0x01)");
+        var = "tcp[12]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1233,6 +1253,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[18:2]");
+        var = "tcp[18:2]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1250,6 +1271,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         } 
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[12:1] >> 4)");
+        var = "tcp[12]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1267,6 +1289,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("tcp[0:2]");
+        var = "tcp[0:2]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1284,6 +1307,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("((tcp[12:1] >> 1) & 0x07)");
+        var = "tcp[12]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1301,6 +1325,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x80)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1318,6 +1343,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x40)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1335,6 +1361,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x20)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1352,6 +1379,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x10)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1369,6 +1397,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }       
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x08)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1386,6 +1415,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }   
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x04)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1403,6 +1433,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }  
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x02)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";
@@ -1420,6 +1451,7 @@ public class CreateTcpFilter extends javax.swing.JFrame {
         }  
         condition c = new condition();
         condition.jLabelFilter.setText("(tcp[13:1] & 0x01)");
+        var = "tcp[13]";
         c.setVisible(true);
         c.tcp = this;
         c.t = "TCP";

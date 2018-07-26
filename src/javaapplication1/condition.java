@@ -5,6 +5,7 @@
  */
 package javaapplication1;
 
+import java.awt.Font;
 import static javaapplication1.condition.jLabelFilter;
 import javax.swing.DefaultComboBoxModel;
 
@@ -41,21 +42,20 @@ public class condition extends javax.swing.JFrame {
         Header = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         Body = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         jComboBoxValues = new javax.swing.JComboBox<>();
         jTextFieldValues = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jComboBoxCondition = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
         jRadioBin = new javax.swing.JRadioButton();
         jRadioOct = new javax.swing.JRadioButton();
         jRadioDec = new javax.swing.JRadioButton();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBoxCondition = new javax.swing.JComboBox<>();
-        jPanel3 = new javax.swing.JPanel();
         jLabelFilter = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         Footer = new javax.swing.JPanel();
         ipOk = new javax.swing.JButton();
+        IpBack = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -71,17 +71,29 @@ public class condition extends javax.swing.JFrame {
 
         Body.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setText("Value:");
-        Body.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, -1, -1));
-
         jComboBoxValues.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxValuesActionPerformed(evt);
             }
         });
-        Body.add(jComboBoxValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 190, -1));
-        Body.add(jTextFieldValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 190, -1));
+        Body.add(jComboBoxValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 190, -1));
+        Body.add(jTextFieldValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 190, -1));
+
+        jLabel1.setFont(new Font("Tahoma", Font.BOLD,14));
+        jLabel1.setText("Filter:");
+
+        jLabel2.setFont(new Font("Tahoma", Font.BOLD,14));
+        jLabel2.setText("Condition:");
+
+        jComboBoxCondition.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "==", ">", "<" }));
+        jComboBoxCondition.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxConditionActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setFont(new Font("Tahoma", Font.BOLD,14));
+        jLabel3.setText("Value:");
 
         jRadioBin.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jRadioBin.setText("HEX");
@@ -107,90 +119,56 @@ public class condition extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(0, 198, Short.MAX_VALUE)
-                .addComponent(jRadioBin)
-                .addGap(78, 78, 78)
-                .addComponent(jRadioOct)
-                .addGap(78, 78, 78)
-                .addComponent(jRadioDec)
-                .addGap(165, 165, 165))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioBin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioOct)
-                    .addComponent(jRadioDec))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        Body.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 660, 50));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setText("Condition:");
-
-        jComboBoxCondition.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "==", ">", "<" }));
-        jComboBoxCondition.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBoxConditionActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 227, Short.MAX_VALUE)
-                .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(170, 170, 170))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addContainerGap(17, Short.MAX_VALUE))
-        );
-
-        Body.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 550, 60));
-
         jLabelFilter.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("Filter:");
+        jLabelFilter.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 195, Short.MAX_VALUE)
-                .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(192, 192, 192))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addComponent(jLabel3)
+                .addGap(138, 138, 138)
+                .addComponent(jRadioBin)
+                .addGap(80, 80, 80)
+                .addComponent(jRadioOct)
+                .addGap(79, 79, 79)
+                .addComponent(jRadioDec)
+                .addGap(0, 142, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(218, 218, 218)
+                        .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(129, 129, 129)
+                        .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1)
+                    .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(62, 62, 62)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jRadioBin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jRadioOct)
+                        .addComponent(jRadioDec))))
         );
 
-        Body.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 650, -1));
+        Body.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 650, 240));
 
         getContentPane().add(Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 862, 365));
 
@@ -202,20 +180,33 @@ public class condition extends javax.swing.JFrame {
             }
         });
 
+        IpBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
+        IpBack.setText("Back");
+        IpBack.setAlignmentY(0.0F);
+        IpBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IpBackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout FooterLayout = new javax.swing.GroupLayout(Footer);
         Footer.setLayout(FooterLayout);
         FooterLayout.setHorizontalGroup(
             FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FooterLayout.createSequentialGroup()
-                .addContainerGap(763, Short.MAX_VALUE)
+                .addContainerGap(670, Short.MAX_VALUE)
                 .addComponent(ipOk)
-                .addGap(32, 32, 32))
+                .addGap(18, 18, 18)
+                .addComponent(IpBack, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33))
         );
         FooterLayout.setVerticalGroup(
             FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FooterLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ipOk)
+                .addGroup(FooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ipOk)
+                    .addComponent(IpBack))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
@@ -231,7 +222,7 @@ public class condition extends javax.swing.JFrame {
     /*Add the selected conditions to the field of the header that you want to create.*/
     private void ipOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ipOkActionPerformed
         // TODO add your handling code here:
-        if(t == "UDP"){
+        if("UDP".equals(t)){
            switch(jComboBoxCondition.getSelectedIndex()){
                 case 0:
                     udp.toret += " == ";
@@ -256,7 +247,7 @@ public class condition extends javax.swing.JFrame {
             }
             dispose();
             udp.setVisible(true); 
-        }else if(t == "IP"){
+        }else if("IP".equals(t)){
             switch(jComboBoxCondition.getSelectedIndex()){
                 case 0:
                     ip.toret += " == ";
@@ -281,7 +272,7 @@ public class condition extends javax.swing.JFrame {
             }   
             dispose();
             ip.setVisible(true); 
-        }else if(t == "TCP"){
+        }else if("TCP".equals(t)){
             switch(jComboBoxCondition.getSelectedIndex()){
                 case 0:
                     tcp.toret += " == ";
@@ -317,7 +308,7 @@ public class condition extends javax.swing.JFrame {
             jRadioOct.setSelected(false);
             if(jLabelFilter.getText() == "udp[0:2]" || jLabelFilter.getText() == "udp[2:2]" || jLabelFilter.getText() == "udp[4:2]" 
                     || jLabelFilter.getText() == "udp[6:2]" || jLabelFilter.getText() == "ip[2:2]" || jLabelFilter.getText() == "ip[4:2]"
-                    || jLabelFilter.getText() == "(ip[10:2])" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
+                    || jLabelFilter.getText() == "ip[10:2]" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
                     || jLabelFilter.getText() == "tcp[16:2]" || jLabelFilter.getText() == "tcp[18:2]" || jLabelFilter.getText() == "tcp[14:2]")
             {
                 String[] values =new String[65536];
@@ -384,18 +375,18 @@ public class condition extends javax.swing.JFrame {
                 }
                 this.jComboBoxValues.setModel(new DefaultComboBoxModel(values));
                 this.jComboBoxValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[8:1])" || jLabelFilter.getText() == "(ip[9:1])"){
+            }else if(jLabelFilter.getText() == "ip[8:1]" || jLabelFilter.getText() == "ip[9:1]"){
                 String[] values =new String[256];
                 for(int n = 0; n < 256; n++) {
                     values[n] = ("0x"+String.valueOf(Integer.toHexString(n)).toUpperCase());
                 }
                 this.jComboBoxValues.setModel(new DefaultComboBoxModel(values));
                 this.jComboBoxValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[12:4])" || jLabelFilter.getText() == "(ip[16:4])" 
+            }else if(jLabelFilter.getText() == "ip[12:4]" || jLabelFilter.getText() == "ip[16:4]" 
                     || jLabelFilter.getText() == "tcp[4:4]" || jLabelFilter.getText() == "tcp[8:4]"){
                 this.jTextFieldValues.setText("0x");
                 this.jTextFieldValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[20:16])"){
+            }else if(jLabelFilter.getText() == "ip[20:16]"){
                 this.jTextFieldValues.setText("0x");
                 this.jTextFieldValues.setVisible(true);
             }else if(jLabelFilter.getText() == "(tcp[12:1] & 0x01)"){
@@ -473,7 +464,7 @@ public class condition extends javax.swing.JFrame {
             jRadioDec.setSelected(false);
             if(jLabelFilter.getText() == "udp[0:2]" || jLabelFilter.getText() == "udp[2:2]" || jLabelFilter.getText() == "udp[4:2]" 
                     || jLabelFilter.getText() == "udp[6:2]" || jLabelFilter.getText() == "ip[2:2]" || jLabelFilter.getText() == "ip[4:2]"
-                    || jLabelFilter.getText() == "(ip[10:2])" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
+                    || jLabelFilter.getText() == "ip[10:2]" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
                     || jLabelFilter.getText() == "tcp[16:2]" || jLabelFilter.getText() == "tcp[18:2]" || jLabelFilter.getText() == "tcp[14:2]")
             {
                 String[] values =new String[65536];
@@ -543,18 +534,18 @@ public class condition extends javax.swing.JFrame {
                 }
                 this.jComboBoxValues.setModel(new DefaultComboBoxModel(values));
                 this.jComboBoxValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[8:1])" || jLabelFilter.getText() == "(ip[9:1])"){
+            }else if(jLabelFilter.getText() == "ip[8:1]" || jLabelFilter.getText() == "ip[9:1]"){
                 String[] values =new String[256];
                 for(int n = 0; n < 256; n++) {
                     values[n] = ("0"+String.valueOf(Integer.toOctalString(n)).toUpperCase());
                 }
                 this.jComboBoxValues.setModel(new DefaultComboBoxModel(values));
                 this.jComboBoxValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[12:4])" || jLabelFilter.getText() == "(ip[16:4])" 
+            }else if(jLabelFilter.getText() == "ip[12:4]" || jLabelFilter.getText() == "ip[16:4]" 
                     || jLabelFilter.getText() == "tcp[4:4]" || jLabelFilter.getText() == "tcp[8:4]"){
                 this.jTextFieldValues.setText("0");
                 this.jTextFieldValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[20:16])"){
+            }else if(jLabelFilter.getText() == "ip[20:16]"){
                 this.jTextFieldValues.setText("0");
                 this.jTextFieldValues.setVisible(true);
             }else if(jLabelFilter.getText() == "(tcp[12:1] & 0x01)"){
@@ -639,7 +630,7 @@ public class condition extends javax.swing.JFrame {
             jRadioOct.setSelected(false);
             if(jLabelFilter.getText() == "udp[0:2]" || jLabelFilter.getText() == "udp[2:2]" || jLabelFilter.getText() == "udp[4:2]" 
                     || jLabelFilter.getText() == "udp[6:2]" || jLabelFilter.getText() == "ip[2:2]" || jLabelFilter.getText() == "ip[4:2]"
-                    || jLabelFilter.getText() == "(ip[10:2])" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
+                    || jLabelFilter.getText() == "ip[10:2]" || jLabelFilter.getText() == "tcp[0:2]" || jLabelFilter.getText() == "tcp[2:2]"
                     || jLabelFilter.getText() == "tcp[16:2]" || jLabelFilter.getText() == "tcp[18:2]" || jLabelFilter.getText() == "tcp[14:2]")
             {
                 String[] values =new String[65536];
@@ -709,17 +700,17 @@ public class condition extends javax.swing.JFrame {
                 }
                 this.jComboBoxValues.setModel(new DefaultComboBoxModel(values));
                 this.jComboBoxValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[8:1])" || jLabelFilter.getText() == "(ip[9:1])"){
+            }else if(jLabelFilter.getText() == "ip[8:1]" || jLabelFilter.getText() == "ip[9:1]"){
                 String[] values =new String[256];
                 for(int n = 0; n < 256; n++) {
                     values[n] = (String.valueOf(n));
                 }
                 this.jComboBoxValues.setModel(new DefaultComboBoxModel(values));
                 this.jComboBoxValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[12:4])" || jLabelFilter.getText() == "(ip[16:4])" 
+            }else if(jLabelFilter.getText() == "ip[12:4]" || jLabelFilter.getText() == "ip[16:4]" 
                     || jLabelFilter.getText() == "tcp[4:4]" || jLabelFilter.getText() == "tcp[8:4]"){
                 this.jTextFieldValues.setVisible(true);
-            }else if(jLabelFilter.getText() == "(ip[20:16])"){
+            }else if(jLabelFilter.getText() == "ip[20:16]"){
                 this.jTextFieldValues.setVisible(true);
             }else if(jLabelFilter.getText() == "(tcp[12:1] & 0x01)"
                     || jLabelFilter.getText() == "(tcp[13:1] & 0x10)"){
@@ -789,6 +780,39 @@ public class condition extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jRadioDecActionPerformed
 
+    private void IpBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IpBackActionPerformed
+        // TODO add your handling code here:
+        if("UDP".equals(t)){
+            int i = udp.var.length();
+            udp.toret = udp.toret.substring(0, udp.toret.length() - i);
+            if(!udp.toret.isEmpty()){
+                udp.toret = udp.toret.substring(0, udp.toret.length() - 1);
+            }else{
+                udp.toret = "";
+            }
+            udp.setVisible(true);
+        }else if("TCP".equals(t)){
+            int i = tcp.var.length();
+            tcp.toret = tcp.toret.substring(0, tcp.toret.length() - i);
+            if(!tcp.toret.isEmpty()){
+                tcp.toret = tcp.toret.substring(0, tcp.toret.length() - 1);
+            }else{
+                tcp.toret = "";
+            }
+            tcp.setVisible(true);
+        }else{
+            int i = ip.var.length();
+            ip.toret = ip.toret.substring(0, ip.toret.length() - i);
+            if(!ip.toret.isEmpty()){
+                ip.toret = ip.toret.substring(0, ip.toret.length() - 1);
+            }else{
+                ip.toret = "";
+            }
+            ip.setVisible(true);
+        }
+        dispose();
+    }//GEN-LAST:event_IpBackActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -829,6 +853,7 @@ public class condition extends javax.swing.JFrame {
     private javax.swing.JPanel Body;
     private javax.swing.JPanel Footer;
     private javax.swing.JPanel Header;
+    private javax.swing.JButton IpBack;
     private javax.swing.JButton ipOk;
     private javax.swing.JComboBox<String> jComboBoxCondition;
     private javax.swing.JComboBox<String> jComboBoxValues;
@@ -837,8 +862,6 @@ public class condition extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     public static javax.swing.JLabel jLabelFilter;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton jRadioBin;
     private javax.swing.JRadioButton jRadioDec;

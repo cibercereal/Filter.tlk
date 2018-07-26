@@ -194,7 +194,7 @@
                       <Component id="ipDo" max="32767" attributes="0"/>
                       <Component id="ipBack" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -206,7 +206,6 @@
               <Image iconType="3" name="/images/back.png"/>
             </Property>
             <Property name="alignmentY" type="float" value="0.0"/>
-            <Property name="label" type="java.lang.String" value="Back"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ipBackActionPerformed"/>
