@@ -128,7 +128,14 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="24" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
+<<<<<<< HEAD
                           <Component id="appName" max="32767" attributes="0"/>
+=======
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Component id="appName" max="32767" attributes="0"/>
+                          </Group>
+>>>>>>> 7dac26e354f2362c87775aef514034a41c37b110
                           <Component id="icon" min="-2" pref="210" max="-2" attributes="0"/>
                       </Group>
                   </Group>
