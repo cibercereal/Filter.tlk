@@ -350,8 +350,10 @@
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="4"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="BorderFactory.createMatteBorder(0, 1, 0, 1, Color.BLACK)" type="code"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                    <EmptyBorder/>
+                  </Border>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -382,8 +384,10 @@
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="6"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="BorderFactory.createMatteBorder(0, 1, 0, 1, Color.BLACK)" type="code"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                    <EmptyBorder/>
+                  </Border>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -841,6 +845,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipVersion">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Version"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -859,6 +866,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipIHL">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="IHL"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -877,6 +887,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipDSCP">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="DSCP"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -895,6 +908,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipECN">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="ECN"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -913,6 +929,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipLength">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Total Length"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -980,6 +999,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipIdentification">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Identification"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -998,6 +1020,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipFlags">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Flags"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -1016,6 +1041,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipFOfsset">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fragment Offset"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -1083,6 +1111,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipTTL">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Time to Live (TTL)"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -1101,6 +1132,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipProtocol">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Protocol"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -1119,6 +1153,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipHeaderCheckSum">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Header Checksum"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -1186,6 +1223,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipSourceIP">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Source IP Address"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -1253,6 +1293,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipDestIP">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Destination IP Address"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -1320,6 +1363,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="ipOptions">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arimo" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Options (IF HL&gt;5)"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">

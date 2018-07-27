@@ -79,17 +79,10 @@ public class condition extends javax.swing.JFrame {
         Body.add(jComboBoxValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 190, -1));
         Body.add(jTextFieldValues, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 190, -1));
 
-<<<<<<< HEAD
         jLabel1.setFont(new Font("Tahoma", Font.BOLD,14));
         jLabel1.setText("Filter:");
 
         jLabel2.setFont(new Font("Tahoma", Font.BOLD,14));
-=======
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("Filter:");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
->>>>>>> 7dac26e354f2362c87775aef514034a41c37b110
         jLabel2.setText("Condition:");
 
         jComboBoxCondition.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "==", ">", "<" }));
@@ -99,11 +92,7 @@ public class condition extends javax.swing.JFrame {
             }
         });
 
-<<<<<<< HEAD
         jLabel3.setFont(new Font("Tahoma", Font.BOLD,14));
-=======
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
->>>>>>> 7dac26e354f2362c87775aef514034a41c37b110
         jLabel3.setText("Value:");
 
         jRadioBin.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -145,11 +134,7 @@ public class condition extends javax.swing.JFrame {
                 .addComponent(jRadioOct)
                 .addGap(79, 79, 79)
                 .addComponent(jRadioDec)
-<<<<<<< HEAD
                 .addGap(0, 142, Short.MAX_VALUE))
-=======
-                .addGap(0, 154, Short.MAX_VALUE))
->>>>>>> 7dac26e354f2362c87775aef514034a41c37b110
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
@@ -170,11 +155,7 @@ public class condition extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jLabelFilter, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-=======
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
->>>>>>> 7dac26e354f2362c87775aef514034a41c37b110
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBoxCondition, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))

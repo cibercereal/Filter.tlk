@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
@@ -13,35 +12,7 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/condition.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/MenuFrame.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/CreateIpFilter.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/CreateTcpFilter.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/nDpiFilter.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/CreateUdpFilter.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/SeeFilter.java</file>
+            <file>file:/home/drordas/Escritorio/FilterAnalyzer_v4/FilterAnalyzer/src/javaapplication1/CreateIpFilter.java</file>
         </group>
     </open-files>
 </project-private>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
-        <file>
-            <url>src/javaapplication1/Menu.java</url>
-            <bookmark id="1">
-                <name/>
-                <line>216</line>
-                <key/>
-            </bookmark>
-        </file>
-    </editor-bookmarks>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/CreateIpFilter.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/nDpiFilter.java</file>
-            <file>file:/C:/Users/bruno/Desktop/Revista/FilterAnalyzer/src/javaapplication1/SeeFilter.java</file>
-        </group>
-    </open-files>
-</project-private>
->>>>>>> 7dac26e354f2362c87775aef514034a41c37b110

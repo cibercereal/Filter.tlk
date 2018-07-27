@@ -194,7 +194,7 @@
                       <Component id="ipDo" max="32767" attributes="0"/>
                       <Component id="ipBack" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
